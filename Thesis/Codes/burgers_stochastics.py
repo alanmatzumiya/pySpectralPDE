@@ -16,6 +16,8 @@ from matplotlib.ticker import LinearLocator
 
 from numba import jit
 
+import matplotlib
+
 
 
 import pylab as pl
