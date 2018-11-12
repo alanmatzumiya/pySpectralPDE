@@ -35,7 +35,7 @@ def Graph(xSpace, tim, simulation1, simulation2, u0, aprox):
     ax1 = Axes3D(fig1)
     Z = simulation1
 
-    ax1.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='hot')
+    ax1.plot_surface(X, Y, Z)
     ax1.set_xlabel('x', fontsize=20)
     ax1.set_ylabel(r'\textit{time} (t)', fontsize=20)
     ax1.set_zlabel(r'\textit{U} (t, x)', fontsize=20)
@@ -45,7 +45,7 @@ def Graph(xSpace, tim, simulation1, simulation2, u0, aprox):
     ax2 = Axes3D(fig2)
     W = simulation2
 
-    ax2.plot_surface(X, Y, W, rstride=1, cstride=1, cmap='hot')
+    ax2.plot_surface(X, Y, W)
     ax2.set_xlabel('x', fontsize=20)
     ax2.set_ylabel(r'\textit{time} (t)', fontsize=20)
     ax2.set_zlabel(r'\textit{U} (t, x)', fontsize=20)
@@ -60,7 +60,7 @@ def Graph(xSpace, tim, simulation1, simulation2, u0, aprox):
 
     plt.xlabel(r'\textit{x}', fontsize=15)
     plt.ylabel(r'\textit{U} (x)', fontsize=15)
-    plt.title('Approximation with chevycheb polynomials',
+    plt.title('Approximation with chebycheb polynomials',
               fontsize=16, color='black')
 
     ax3.grid()
