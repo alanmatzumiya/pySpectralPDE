@@ -8,7 +8,7 @@ def time_function():
 
 
 # Number of runs
-N = 1
+N = 2
 
 # Average time
 time = timeit.timeit(time_function, number=N) / N
