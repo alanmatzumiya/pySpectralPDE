@@ -8,13 +8,15 @@ def time_function():
 
 
 # Number of runs
-N = 2
+N = 1
 
 # Average time
 time = timeit.timeit(time_function, number=N) / N
 
+print(time)
+
 # Save file
-file = open('execution_time', 'w')
-file.write('execution_time' + ' = ' + str(time) + ' seconds')
-file.close()
+# file = open('execution_time', 'w')
+# file.write('execution_time' + ' = ' + str(time) + ' seconds')
+# file.close()
 

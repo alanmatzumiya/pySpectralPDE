@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import rc
+from matplotlib import cm
 rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
 rc('text', usetex=True)
 
@@ -35,7 +36,7 @@ def Graph(xSpace, tim, simulation1, simulation2):
     ax1 = Axes3D(fig1)
     Z = simulation1
 
-    ax1.plot_surface(X, Y, Z)
+    ax1.plot_surface(X, Y, Z, cmap=cm.coolwarm)
     ax1.set_xlabel('x', fontsize=20)
     ax1.set_ylabel(r'\textit{time} (t)', fontsize=20)
     ax1.set_zlabel(r'\textit{U} (t, x)', fontsize=20)
@@ -45,7 +46,7 @@ def Graph(xSpace, tim, simulation1, simulation2):
     ax2 = Axes3D(fig2)
     W = simulation2
 
-    ax2.plot_surface(X, Y, W)
+    ax2.plot_surface(X, Y, W, cmap=cm.coolwarm)
     ax2.set_xlabel('x', fontsize=20)
     ax2.set_ylabel(r'\textit{time} (t)', fontsize=20)
     ax2.set_zlabel(r'\textit{U} (t, x)', fontsize=20)

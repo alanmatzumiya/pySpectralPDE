@@ -34,12 +34,12 @@ def run_fishers():
     Q = 200
 
     # Discretization
-    xSpace = np.linspace(0,1, 256)
-    tim = np.linspace(0, 10, 126)
+    xSpace = np.linspace(0, 1, 512)
+    tim = np.linspace(0, 10, 256)
 
     # Creating set J^{N;M}
     J = Js(N)
-    M = len(J[:,1])
+    M = len(J[:, 1])
 
     # Hermite polynomials evaluation
     rule1 = np.polynomial.hermite_e.hermegauss(Q)

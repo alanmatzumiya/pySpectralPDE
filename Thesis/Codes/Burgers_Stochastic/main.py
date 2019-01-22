@@ -30,12 +30,12 @@ def run_burgers():
     nu = 0.01
 
     # Parameteres of the method
-    N = 4
+    N = 5
     Q = 200
 
     # Discretization
-    xSpace = np.linspace(0,1, 256)
-    tim = np.linspace(0, 10, 126)
+    xSpace = np.linspace(0,1, 2048)
+    tim = np.linspace(0, 10, 1026)
 
     # Creating set J^{N;M}
     J = Js(N)

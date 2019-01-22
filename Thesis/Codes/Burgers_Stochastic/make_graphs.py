@@ -23,7 +23,7 @@ def make():
     Graph(xSpace, tim, simulation1, simulation2)
 
     # Graph convergence
-    fig4, ax4 = plt.subplots()
+    fig4, ax4 = plt.subplots(figsize=(10,10))
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')
     plt.plot(times, norms)
@@ -39,4 +39,4 @@ def make():
 
 make()
 
-plt.show()
+# plt.show()
