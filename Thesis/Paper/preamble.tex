@@ -1,0 +1,90 @@
+%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage[mathscr]{eucal}
+\usepackage{fancyhdr}
+\usepackage{supertabular}
+\usepackage{fancybox}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[fit]{truncate}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epic}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{appendix}
+\newtheorem{example}{Example}[chapter]
+\newtheorem{teor}{{\it \textbf{Theorem} }}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem*{remark}{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+
+%\bibliography{thesis_bib}
+
+
+%\usepackage{algorithm,algpseudocode}
+%\usepackage{program}
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linkcolor=blue  %choose some color if you want links to stand out
+}
+
+\definecolor{mygreen}{rgb}{0,0.5,0}
+\definecolor{myred}{rgb}{0.75,0,0}
+\definecolor{myblue}{rgb}{0,0,0.9}
+\definecolor{mymix}{rgb}{0.2,0.4,0.1}
+
+\newcommand{\textblue}[1]{\textcolor{myblue}{#1}}
+\newcommand{\textred}[1]{\textcolor{myred}{#1}}
+\newcommand{\textgreen}[1]{\textcolor{mygreen}{#1}}
+\newcommand{\textmix}[1]{\textcolor{mymix}{#1}}
+
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\ty}{\raisebox{1pt}{\tiny \textsl{\textsf{T}}}}
+\newcommand{\dr}{\ensuremath{\mathrm{d}}}
+
+\setlength{\parskip}{0.7ex plus0.2ex minus0.1ex}
+
+\setlength{\textwidth}{140mm}%
+\setlength{\textheight}{220mm}%
+\setlength{\oddsidemargin}{15mm}%
+\setlength{\evensidemargin}{15mm}%
+%\setlength{\hoffset}{10mm}%
+\setlength{\voffset}{-25mm}%
+\setlength{\topmargin}{15mm}%
+\setlength{\headheight}{12pt}%
+\setlength{\headsep}{15mm}
+
+\pagestyle{fancy}
+\rfoot{\thepage}
+%\setlength{\headrulewidth}{}
+\fancyhead{}
+
+%\addtolength{\headwidth}{0pt}
+%\addtolength{\headwidth}{0pt}
+\renewcommand{\chaptermark}[1]%
+               {\markboth{\textnormal\sffamily{\upshape\small #1}}{}}
+\renewcommand{\sectionmark}[1]%
+               {\markright{\textnormal\sffamily{\upshape\small \thesection\ #1}}}
+\lhead[\fancyplain{}{\small\thepage}]%
+      {\fancyhead[LO,LE]{\truncate{.45\headwidth}{\rightmark}} \fancyplain{}{\sffamily\small \rightmark}}
+\rhead[\fancyplain{}{\sffamily\small \leftmark}]%
+       {\fancyhead[RO,RE]{\truncate{.45\headwidth}{\leftmark}}\fancyplain{}{\small\thepage}}
+\cfoot{}

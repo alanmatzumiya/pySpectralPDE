@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Introducci\'on}{10}{0}{1}
+\beamer@sectionintoc {2}{M\'etodos Espectrales}{19}{0}{2}
+\beamer@sectionintoc {3}{Ecuaci\'on de Burgers' Determinista}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Galerkin}{31}{0}{3}
+\beamer@subsectionintoc {3}{2}{Colocacion}{48}{0}{3}
+\beamer@subsectionintoc {3}{3}{Bajos Coeficientes de Viscosidad}{63}{0}{3}
+\beamer@sectionintoc {4}{Ecuaci\'on de Burgers' Estoc\'astica}{71}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{84}{0}{5}

@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Brief History of Burgers' Equation}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Analytical solution for Burgers' equation.}{5}{subsection.1.1.1}
+\contentsline {paragraph}{Parabolic Equation.}{6}{section*.2}
+\contentsline {section}{\numberline {1.2}Stochastic Burger's equation}{7}{section.1.2}
+\contentsline {chapter}{\numberline {2}Fundamental Theory For Spectral Methods}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Elements in Convergence Theory}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Projection Operator}{13}{subsection.2.1.1}
+\contentsline {subsubsection}{subsection}{17}{section*.6}
+\contentsline {subsubsection}{Approximation theory for smooth functions}{18}{section*.7}
+\contentsline {subsection}{\numberline {2.1.2}Interpolation Operator}{20}{subsection.2.1.2}
+\contentsline {subsubsection}{The even expansion}{21}{section*.8}
+\contentsline {subsubsection}{The odd expansion}{25}{section*.11}
+\contentsline {subsubsection}{Differentiation of the discrete expansions}{26}{section*.12}
+\contentsline {paragraph}{Differentiation Matrix.}{27}{section*.13}
+\contentsline {subsubsection}{Results for the discrete expansion}{28}{section*.14}
+\contentsline {chapter}{\numberline {3}Solutions to Deterministic Burger's Equation Using Spectral Methods}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fourier Galerkin}{36}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fourier Collocation}{39}{section.3.2}
+\contentsline {section}{\numberline {3.3}Numerical Results}{41}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Galerkin Simulations}{41}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Collocation Simulations}{49}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Solutions for Small Viscosity Coefficients}{55}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Numerical Solution to Stochastic Burgers' equation}{63}{chapter.4}
+\contentsline {section}{\numberline {4.1}Elemental Theory to Numerical Method}{63}{section.4.1}
+\contentsline {section}{\numberline {4.2}Numerical Approximation and Its Description}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Initial Conditions}{67}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Numerical Approximation to Stochastic Burgers' Equation}{68}{section.4.3}
+\contentsline {section}{\numberline {4.4}Something about Numerical Analysis}{70}{section.4.4}
+\contentsline {chapter}{\numberline {5}Discussion and Conclusions}{75}{chapter.5}
+\contentsline {chapter}{\numberline {A}Some results of Hilbert's space theory}{77}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Important Inequalities in Hilbert Spaces and Some about Semi-Group Theory}{77}{section.a.A.1}
+\contentsline {subsection}{\numberline {A.1.1}The Cauchy-Schwarz inequality}{77}{subsection.a.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}The Poincar\'e Inequality}{77}{subsection.a.A.1.2}
+\contentsline {section}{\numberline {A.2}Distributions (or generalized functions) Theory}{77}{section.a.A.2}
+\contentsline {chapter}{\numberline {B}Elements of Probability}{79}{Appendix.a.B}
