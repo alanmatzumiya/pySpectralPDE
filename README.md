@@ -1,2 +1,2 @@
 # Maestria
-thesis, class and more
+thesis and codes
