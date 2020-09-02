@@ -1,0 +1,17 @@
+\section{Fourier Spectral Methods}
+	
+	In the following sections we will work with the problem obtained by the transformation of the problem (\ref{Hopf_tranform}) given by
+	\begin{align}
+		u(x, t) = - 2 \alpha \frac{\partial_{x} \varphi(x, t)}{\varphi(x, t)} = - 2 \alpha \left( \log{\varphi(x, t)} \right)_x
+	\end{align}
+	with $\alpha > 0$, and $\varphi$ solves the following initial value problem
+	\begin{align}
+	\label{Bugers_Lineal}	
+		\left \lbrace \begin{array}{ll}
+			\frac{\partial \varphi}{\partial t} = \alpha \varphi_{xx}, \hspace{2mm} 0 < t \leq T, \hspace{2mm} x \in I \\
+			\\
+			\varphi(x, 0) = \displaystyle \varphi_0 (x) = e^{- \int_{0}^{x} \frac{u_0(y)}{2 \alpha} dy}, \hspace{2mm} x \in I
+		\end{array}  \right .
+	\end{align}
+	\input{burgers_equation/deterministic/methods/Galerkin}
+	\input{burgers_equation/deterministic/methods/Collocation}

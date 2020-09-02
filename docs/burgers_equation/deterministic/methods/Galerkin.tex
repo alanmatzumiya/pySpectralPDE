@@ -1,0 +1,123 @@
+\subsection{Fourier-Galerkin}
+    \label{Galerkin}
+	\vspace{0.3cm} 
+	
+	
+	In chapter \ref{Chapter_2} we saw that for a function $\varphi \in H^2_p [0, 2 \pi]$ it can be written as
+	\begin{align}
+	\label{Expansion_phi}	
+		\varphi (x, t) = \displaystyle \sum_{|n| \leq \infty} \hat{\varphi}_n (t) \phi_n (x), \hspace{2mm} \hat{\varphi}_n (t) = \frac{1}{2 \pi} \left\langle \varphi (x, t), \phi_n (x) \right\rangle  
+	\end{align}
+	where $\phi_n (x) = e^{inx}$, and let's assume that this function is the solution of the problem (\ref{Bugers_Lineal}).\\
+	
+	The Fourier-Galerkin method will be constructed using the project operator described in (\ref{proyection_operator}) to project and force the function $\varphi$ to satisfy the problem (\ref{Bugers_Lineal}) on a space that will be defined a continuation. \\
+	
+	Let $V_N$ the space of trigonometric polynomials of degree $2N + 1$ given by $V_N = B_N \cap H^2_p [0, 2 \pi]$, where $B_N = span\{\phi_n (x) : |n| \leq N\}$. Then for $\varphi \in V_N$ we can obtain its expansion as  
+	\begin{align}
+	\label{Expansion_phi_N}	
+		\varphi_N (x, t) = \displaystyle \sum_{|n| \leq N} \hat{\varphi}_n (t) \phi_n (x), \hspace{2mm} \hat{\varphi}_n (t) = \frac{1}{2 \pi} \left\langle \varphi (x, t), \phi_n (x) \right\rangle  
+	\end{align} 
+	
+	Substituting (\ref{Expansion_phi}), and (\ref{Expansion_phi_N}) into the equation (\ref{Bugers_Lineal}) to taking the difference as follows
+	\begin{align*}
+		\left[ \frac{\partial}{\partial t} \varphi_N - \alpha \frac{\partial^2}{\partial x} \varphi_N \right] - \left[ \frac{\partial \varphi}{\partial t} - \alpha \frac{\partial^2 \varphi}{\partial x} \right] = R_N (x, t)   
+	\end{align*}
+	where $R_N (x, t)$ is a residual function, and since the second term is exactly zero because $\varphi$ is the exact solution we have to
+	\begin{align*}
+		\frac{\partial}{\partial t} \varphi_N -  \alpha \frac{\partial^2}{\partial x} \varphi_N = R_N (x, t)
+	\end{align*}
+	
+	In the Fourier-Galerkin method, it is desired that the remainder $R_N$ belong to the orthogonal space of $ V_N $, that is, for every $\varphi, \phi \in V_N $ such that $\langle \varphi - \mathcal{P}_N \varphi, \phi \rangle = 0$. This is achieved by forcing for each $|n| \leq N$ the following condition
+	\begin{align}
+		\left\langle R_N, \phi_n \right\rangle = \left\langle \frac{\partial \varphi_N}{\partial t} - \alpha \frac{\partial^2 \varphi_N}{\partial x^2}, \phi_n \right\rangle = 0, \hspace{2mm}  \hspace{2mm} \phi_n \in V_N, \hspace{2mm} \forall t > 0
+	\end{align}
+	or equivalently
+	\begin{align*}
+		\displaystyle \int_{\mathcal{D}} \frac{\partial}{\partial t} \varphi_N (x, t) \overline{\phi_n (x)} dx = \alpha \int_{\mathcal{D}} \frac{\partial^2}{\partial x^2} \varphi_N (x, t) \overline{\phi_n (x)} dx , \hspace{2mm}  \hspace{2mm} \phi_n \in V_N, \hspace{2mm} \forall t > 0
+	\end{align*}
+	
+	\noindent Using the orthogonality $\langle \phi_k, \phi_n \rangle = 2 \pi \delta_{kn}$, for each $n$ fixed we have to
+	\begin{align*}
+		\left\langle \frac{\partial \varphi_N}{\partial t}, \phi_n  \right\rangle = \left\langle \displaystyle \sum_{ |k| \leq N} \frac{d \hat{\varphi}_k (t)}{dt} \phi_k, \phi_n  \right\rangle = 2 \pi \frac{d \hat{\varphi}_n (t)}{dt}
+	\end{align*}
+	
+	Note that the spatial interval is not the desired one, for this we are going to define the following linear transformation from $\mathcal{D}_p = [0, 2 \pi]$ to $\mathcal{D} = [x_L, x_R]$ given by $x = P z + x_L$ to escalate the problem, where $P = \frac{x_R - x_L}{2 \pi}$ and $z \in \mathcal{D}_p$. Then, using the chain rule we can rewritten the derivatives as
+	\begin{align*}
+		\frac{\partial^2 \varphi_N}{\partial x^2} = P^2 \frac{\partial^2 \varphi_N}{\partial x^2} 
+	\end{align*}
+	and using $\frac{\partial^2}{\partial x^2} \phi_n (x) = -P^2 n^2 \phi_n (x)$ we have to  
+	\begin{align*}
+		\alpha \left\langle \frac{\partial^2 \varphi_N}{\partial x^2}, \phi_n \right\rangle = -2 \pi \alpha P^2 n^2 \hat{\varphi}_n (t), \hspace{2mm} |n| \leq N
+	\end{align*}
+	
+	\noindent Therefore, we have the next ODE
+	\begin{align*}
+		\frac{d \hat{\varphi}_n (t)}{dt} = - \alpha P^2 n^2 \hat{\varphi}_n (t), \hspace{2mm} |n| \leq N 
+	\end{align*}
+	which is solved using the projection of the initial condition given by
+	\begin{align}
+	\label{Galerkin_Linear}	
+		\varphi_N (x, 0) = \displaystyle \sum_{|n| \leq N} \hat{\varphi}_n (0) \phi_n (x), \hspace{2mm} \hat{\varphi}_n (0) = \frac{1}{2 \pi} \langle \varphi_0 (x), \phi_n (x) \rangle   
+	\end{align}
+	
+	We will denote $\lambda_n = \alpha P^2 n^2$, so the exact solution for the above system is given as follows
+	\begin{align*}
+		\hat{\varphi}_n (t) = \hat{\varphi}_n (0) e^{-\lambda_n t}, \hspace{2mm} |n| \leq N
+	\end{align*} 
+	
+	Therefore, using (\ref{Expansion_phi_N}) the solution can be expressed as
+	\begin{align*}
+		\varphi_N (x, t) = \displaystyle \sum_{ |n| \leq N} \hat{\varphi}_n (0) e^{-\lambda_n t} \phi (x) 
+	\end{align*}
+	
+	We can notice that $\lambda_n$ is actually an eigenvalue of the problem (\ref{Bugers_Lineal}), which is associated with the eigenvector $\varphi_n (0)$. Therefore, we should note that what we are actually solving is an eigenvalues ​​problem to obtain a representation of the solution in terms of its eigenvectors. \\
+	
+	To see this more clearly, we will represent the solution by configuring the following vectors
+	\begin{align*}
+		\hat{\varphi}_N (t) = \left[ \hat{\varphi}_{-N} , \hat{\varphi}_{-N + 1} (t), \dots, \hat{\varphi}_N (t)  \right]^T, \hspace{2mm} \hat{\varphi}_N (0) = \left[ \hat{\varphi}_{-N} (0) , \hat{\varphi}_{-N + 1} (0), \dots, \hat{\varphi}_N (0)  \right]^T
+	\end{align*}
+	
+	\noindent and the matrix 
+	\begin{align*}
+		\displaystyle \mathcal{L}_N = {\begin{bmatrix}
+				\lambda_{-N} & 0 & \ldots & 0 & 0\\
+				0 & \lambda_{-N + 1} & \ldots & 0 & 0\\
+				\vdots & \vdots & \ddots & \vdots \\
+				0 & 0 & \ldots & \lambda_{N - 1} & 0\\
+				0 & 0 & \ldots & 0 & \lambda_{N}
+		\end{bmatrix}},
+	\end{align*}
+	
+	\noindent then we can express the solution system as 
+	\begin{align*}
+		\hat{\varphi}_N (t) =  e^{- \mathcal{L}_N t} \hat{\varphi}_N (0), 
+	\end{align*}
+	where $e^{- \mathcal{L}_N}$ is the inverse of the exponential matrix of $\mathcal{L}_N$ given by 
+	\begin{align*}
+		\displaystyle e^{\mathcal{L}_N} = {\begin{bmatrix}
+				e^{\lambda_{-N}} & 0 & \ldots & 0 & 0\\
+				0 & e^{\lambda_{-N + 1}} & \ldots & 0 & 0\\
+				\vdots & \vdots & \ddots & \vdots \\
+				0 & 0 & \ldots & e^{ \lambda_{N - 1}} & 0\\
+				0 & 0 & \ldots & 0 & e^{\lambda_{N}}
+		\end{bmatrix}}.
+	\end{align*}
+	
+	From the above, we can notice that the solution approaches very fast to zero when $ t $ tends to infinity. To show this, we can see that the solution is bounded as follows
+	\begin{align*}
+		\| \varphi_N (x, t) \|^2 &= \displaystyle \sum_{ |n| \leq N} | \hat{\varphi}_n (t) |^2 = \sum_{ |n| \leq N} | \hat{\varphi}_n (0) |^2 e^{-2 \lambda_n t} \\
+		&\leq e^{- 2 t} \sum_{ |n| \leq N} | \hat{\varphi}_n (0) |^2 = e^{- 2t} \| \varphi (0) \|^2 
+	\end{align*}
+	showing us that the coefficients vanishing with exponential speed, which tells us that the convergence must have the same behavior. We can verify this with the following estimate
+	\begin{align*}
+		\| \varphi(x, t) - \varphi_N (x, t) \|^2 &= \displaystyle \sum_{ |n| > N} | \hat{\varphi}_n (0) |^2 e^{-\lambda_n t} \leq e^{-\lambda_N t} \sum_{ |n| > N} | \hat{\varphi}_n (0) |^2 \\
+		&\leq e^{-\lambda_N t} \sum_{ |n| \leq N} | \hat{\varphi}_n (0) |^2 = e^{-\lambda_N t} \|\varphi_N (0) \|^2 
+	\end{align*}
+	
+	Therefore, the rate of convergence is exponential, which verifies the theory studied in chapter \ref{Chapter_2}, ensuring an excellent approximation of the solution of the problem (\ref{IVP_Burgers}), which is obtained using (\ref{Hopf_tranform}) to obtain
+	\begin{align}
+	\label{Exact_Solution_Approximation}	
+		u_N (x, t)  = - 2 \alpha \frac{\partial_x \varphi_N (x, t)}{ \varphi_N (x, t)} = - 2 \alpha \frac{\displaystyle \sum_{ |n| \leq N} in \hat{\varphi}_n (0) e^{- \lambda_n t}  \phi_n (x) }{\displaystyle \sum_{|n| \leq N} \hat{\varphi}_n (0) e^{- \lambda_n t}  \phi_n (x)}
+	\end{align}
+
+	The previous expression is much more practical to calculate solutions to the problem (\ref{IVP_Burgers}), we only have to handle the arithmetic operations correctly, and with low approximation orders we will have excellent results.

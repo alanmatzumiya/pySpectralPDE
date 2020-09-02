@@ -1,0 +1,11 @@
+\chapter{Numerical Solutions for Burgers' equation in the Stochastic Version}
+\label{Chapter_4}
+	
+	The objective of this chapter is to show how stochastic partial differential equations can be solved using spectral methods, for which it is much more difficult to find analytical or even numerical solutions. For this, we will dedicate the first section of this chapter to describe in the best possible way the details about a spectral method based on the Hermite series that has been studied in \cite{Delgado2016}, which associates a stochastic partial differential equation with the well-known equation Fokker-Planck-Kolmogorov, which is a partial differential equation that describes the time evolution of the probability density function of the velocity of a particle under the influence of random forces. \\
+
+	We will use some results and definitions from the appendix \ref{Appendix_A} since the theoretical tools involved in the development of this method are outside the limitations of this work. This appendix contains the concepts necessary to understand the basic ideas of the method implementation that we will use in the second and last section considering the stochastic Burgers' equation that we have presented in (\ref{burgers_stochastic}). Finally, we will describe and show some numerical simulations. 
+
+	\input{burgers_equation/stochastic/numerical_method/Spectral_Approximation}	
+	\newpage
+	\input{burgers_equation/stochastic/numerical_experiments/Numerical_Solution}
+	

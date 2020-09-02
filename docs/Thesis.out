@@ -1,0 +1,30 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Brief History of Burgers' Equation}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Analytical solutions for Burgers' equation.}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{The Stochastic Burgers' equation}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{The Fundamental Theory For Spectral Methods}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Projection Operator: Continuous Fourier Expansion}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{Differentiation of the Continuous Expansion}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{Approximation theory for Continuous Expansion.}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Interpolation Operator: Discrete Fourier Expansion}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{The Even Expansion}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{The Odd Expansion}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Differentiation of the discrete expansions}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Approximation theory for Discrete Expansion.}{section.2.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Solutions for Burgers' Equation in the Deterministic Version}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Fourier Spectral Methods}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.1.1}{Fourier-Galerkin}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.2}{Fourier-Collocation}{section.3.1}% 17
+\BOOKMARK [1][-]{section.3.2}{Numerical Experiments}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Numerical Solutions for Burgers' Equation with Viscosity}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{Numerical Solutions for Burgers' Equation without Viscosity}{section.3.2}% 20
+\BOOKMARK [0][-]{chapter.4}{Numerical Solutions for Burgers' equation in the Stochastic Version}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Spectral Approximation for Fokker-Plank-Kolmogorov Equation}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Numerical Solution for Burgers' Equation}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.2.1}{Method Description and Its Implementation}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.2}{A Functional to obtain Initial Conditions}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.3}{Numerical Experiments}{section.4.2}% 26
+\BOOKMARK [0][-]{chapter.5}{Discussion and Conclusions}{}% 27
+\BOOKMARK [0][-]{appendix.a.A}{Elements of Probability}{}% 28
+\BOOKMARK [1][-]{section.a.A.1}{Basic Definitions}{appendix.a.A}% 29
+\BOOKMARK [1][-]{section.a.A.2}{Some Important Results in Probability Spaces}{appendix.a.A}% 30

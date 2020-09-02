@@ -1,0 +1,53 @@
+\section{The Stochastic Burgers' equation}
+     
+    In real situations, the mathematical modeling of physical phenomena in a deterministic manner does not always produce satisfactory results, since certain hypotheses are established for their formulation, increasing uncertainty regarding spatial or temporal variables. To predict the behavior of a fluid, it is necessary to calculate the exact trajectory of each of the particles that compose it (which is an unapproachable problem). 
+    
+    When a fluid is in a closed container under pressure, each particle gets pushed against by all the surrounding particles. The container walls and the pressure-inducing surface (such as a piston) push against them in (Newtonian) reaction. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the particles in those molecules. One fluid flow is isotropic if there is no directional preference (e.g. in fully developed turbulence); the kinetic theory of gases is also an example of isotropy if it's assumed that the molecules move in random directions and as a consequence, there is an equal probability of a molecule moving in any direction. 
+    
+    The equation given by (\ref{navierstokes}) assumes that the fluid is incompressible and isotropic, where the viscous stress is given by a linear relationship with the velocity gradient (Newton's viscosity law). In addition, the collective behavior of the fluid depends only on a few macroscopic variables (such as pressure, volume, and temperature) where the internal structure of the system and the individual behavior of the particles is not relevant for thermodynamic quantities. 
+    
+    Sometimes, due to the large size of such a system, quantum effects can be ignored and Newton's laws may be a good approximation (in some cases, if particles move very quickly with relativistic mechanics). But it is also possible to model a fluid as a set of randomly displaced point particles that do not interact with each other, analyzed by statistical mechanics.
+    
+    The information necessary to specify a physical system has to do with its entropy. When energy is degraded, Boltzmann said, it is because atoms assume a more disorderly state. And entropy is a parameter of disorder: that is the profound conception that emerges from Boltzmann's new interpretation. Oddly enough, you can create a measure for the disorder; is the probability of a particular state, defined here as the number of ways in which it can be assembled from its atoms. 
+    
+    When the interaction between the particles increases, their dispersion affects their positions and their velocities, which makes the entropy of the distribution increase over time until reaching a maximum (when the same system is as homogeneous and disorganized as possible). Then given a system of particles whose states $ X $ (usually position and velocity), it is possible to define a certain probability distribution that involves the various possible microstates of the system. The Maxwell-Boltzmann distribution shows how the speeds of the molecules are distributed in a Gaussian manner.
+    
+    The fundamental postulate of statistical mechanics, also known as a priori equiprobability postulate, says that given an isolated system in equilibrium, the system has the same probability of being in any of the accessible microstates. That is, a system in equilibrium has no preference for any of the microstates available for that balance. Then, in general, a system that ignores individual particles exhibits a global behavior that can be described statistically by defining macroscopic variables from a probability distribution over the microstates space.
+    
+    The basic concept of entropy in information theory has a lot to do with the uncertainty that exists in any random experiment or signal, which is also called the amount of "noise" or "disorder" that a system contains or releases. In this way, we can talk about the amount of information that a signal carries. Because of this, the idea of ​​implementing the Brownian movement, which represents the random movement observed in particles that are in a fluid medium (liquid or gas) as a result of collisions against the molecules of that fluid, gives us another way to describe complex fluids. 
+        
+    Over more than half a century a lot of deep mathematics was developed to tackle the rigorous understanding of turbulence and related questions in hydrodynamics problems. One of the approaches was to use stochastic analysis based on modifying the equations (as e.g. Euler, Navier-Stokes, and Burgers') adding a noise term. The idea here was to use the smoothing effect of the noise but also to discover new phenomena of stochastic nature on the other hand. In addition, this was also motivated by physical considerations, aiming at including perturbative effects, which cannot be modeled deterministically, due to too many degrees of freedom being involved, or aiming at taking into account different time scales to components of the underlying dynamics.
+    
+    Because Burgers' equation given by (\ref{Burgers_Equation}) has a unique solution for any initial condition given, it is not a good model for turbulence. It does not display any chaos; even when a force is added to the right-hand side all solutions converge to a unique stationary solution as time goes to infinity. However, developed a parallel, theoretical, and abstract mathematical beyond its dominant presence in applications. Motivated by the intention to reinstate the Burgers' equation as a model for turbulence, the community turned its attention to the randomly forced Burgers' equation.
+    
+    Several authors have suggested using the stochastic Burgers' equation as a simple model to study turbulence, \cite{Chambers1988,CHOI1992,DAH-TENC1969,HOSOKAWA1975}.
+    In \cite{KARDAR1986} the stochastic burgers equation has been proposed to study the dynamics of the interfaces by adding a white noise (or Brownian motion) to the equation (\ref{Burgers_Equation}) on the right side, given as follows
+    \begin{align}
+    	\frac{\partial u(x, t)}{\partial t} = \alpha \frac{\partial^2 u(x, t)}{\partial x^2} + \frac{1}{2} \frac{\partial}{\partial x} (u^2 (x, t)) + \frac{\partial^2 \widetilde{W}}{\partial t \partial x}.
+    	\label{stochastic_force} 
+    \end{align}    
+    This equation is a class of quasilinear stochastic PDEs (SPDEs), where $\widetilde{W} (x, t)$, $t \geq 0$, $x \in \mathbb{R}$ is a zero-mean Gaussian process. Moreover, we can write a cylindrical Wiener process $W$ by setting
+    \begin{align*}
+    	W(t) = \frac{\partial \widetilde{W}}{\partial x} = \displaystyle \sum_{j=1}^{\infty} \beta_j e_j,
+    \end{align*}
+    where ${e_j}$ is an orthonormal basis of $L_2 (0, 1)$ and ${\beta_j}$ is a sequence of mutually independent real Brownian motions in a fixed probability space $(\Omega, \mathcal{F}, \mathbb{P})$ adapted to a filtration $\{\mathcal{F}_t\}_{t \geq 0}$. For more details of the above, see the Appendix \ref{Appendix_A}.  
+    
+    \noindent In the following we shall write (\ref{stochastic_force}) as follows:
+    \begin{align}
+    	d X(\xi, t) = \left[ \alpha \partial_\xi^2 X(\xi, t) + \frac{1}{2} \partial_\xi \left(X^2 (\xi, t)\right) \right] dt + d W(\xi, t), \hspace{2mm} \xi \in [0, 1], \hspace{2mm} t > 0.
+    	\label{burgers_stochastic}
+    \end{align}
+    Equation (\ref{burgers_stochastic}) is supplemented with Dirichlet boundary conditions
+    \begin{align*}
+    	X (0, t) = X (1, t) = 0, \hspace{2mm} \forall t \geq 0
+    \end{align*}
+    and the initial condition
+    \begin{align*}
+    	X(\xi, 0) = x(\xi), \hspace{2mm} \xi \in [0, 1] 
+    \end{align*}
+    
+    The introduction of randomness in Burgers' equation produced a number of very interesting new directions; directions connected with dynamical systems aspects of the equation, e.g. existence and properties of invariant measures, directions related to various questions on the well-posedness of the equation in various functional settings using techniques from infinite-dimensional stochastic analysis. For further details see \cite{KARDAR1986} for instance.
+    
+    Also, during the past few decades, the stochastic Burgers' equation has found applications in diverse fields ranging from statistical physics, cosmology to fluid dynamics. The problem of Burgers' turbulence, that is the study of the solutions of Burgers' equation with random initial conditions or random forcing is a central issue in the study of nonlinear systems out of equilibrium. For further details see \cite{WEINAN, KHANIN2007} for instance.
+    
+    A main difficulty with the multidimensional stochastic Burgers equation is that the solutions take values in a distributional space, but in the case of one-dimension, the problem of existence of solutions for stochastic Burgers equation is well understood, see \cite{BERTINI1994, Catuogno2014, DAPRATO1994, PERKOWSKI2015}. 

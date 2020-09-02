@@ -1,0 +1,10 @@
+\section{Numerical Experiments}
+	
+	This section intends to be the most important in the chapter since it will take advantage of everything that has been previously studied and expand in the best possible way the implementation of the spectral methods studied in the previous section. For this, we will focus on the nonlinear problem defined in (\ref{IVP_Burgers}) directly, because after understanding these tools you want to have the ability to attack more complex problems such as (\ref{navierstokes}) which it is nonlinear, and in general, in most problems, it is not always possible to obtain analytical solutions, and then an option is to approximate them with numerical methods. \\
+	
+	According to what was studied in the previous section, we will start solving our problem with each method considering $\alpha> 0$, and later we will study the case when $\alpha = 0$. To find solutions we are going to use Euler's method, either explicit or implicit, to solve in the variable $t$, and due to the importance of carrying out numerical studies, we will try to give a detailed methodology about each method implemented to construct an algorithm that can be useful in the realization of computational codes. Finally, with the aim of giving a more detailed analysis, we will present some simulations of the results obtained.
+	
+	\subsection{Numerical Solutions for Burgers' Equation with Viscosity}
+	\input{burgers_equation/deterministic/numerical_experiments/viscid/Viscid_Galerkin}
+	\input{burgers_equation/deterministic/numerical_experiments/viscid/Viscid_Collocation}
+	\input{burgers_equation/deterministic/numerical_experiments/inviscid/Inviscid}

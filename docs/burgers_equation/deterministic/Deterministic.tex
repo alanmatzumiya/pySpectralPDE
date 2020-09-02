@@ -1,0 +1,22 @@
+\chapter{Solutions for Burgers' Equation in the Deterministic Version}
+\label{Chapter_3} 
+	
+	This chapter is one of the most important, since we will begin with the development of the main objective of this work. We will construct two spectral methods known as Fourier-Galerkin and Fourier-Collocation using the projection and interpolation operators respectively, considering an initial value problem that will be defined using our objective equation presented in (\ref{Burgers_Equation}). \\
+	
+	For this, to illustrate what we have studied in the Chapter (\ref{Chapter_2}), we will consider the function space $H^q_p [0, 2 \pi]$ with the norm defined in (\ref{sobolev_norm}) for some $q$ that will be specified later. We will assume that the problems have solutions $u(x, t) \in H^q_p [\mathcal{D}]$ for every $t \in I$, where $\mathcal{D} = [x_L, x_R]$ for some fixed reals $ x_L $, $ x_R $ and $I = [0, T]$ with $T> 0$. So, given some real $\alpha \geq 0$ and an initial condition function $u_0 (x) \in H^q_p [\mathcal{D}]$, our initial value problem is as follows
+	\begin{align}
+	\label{IVP_Burgers}
+		\left \lbrace \begin{array}{ll}
+			\frac{\partial u}{\partial t} + \frac{1}{2} (u^2)_x = \alpha \frac{\partial^2 u}{\partial x}, \hspace{2mm} 0 < t \leq T, \hspace{2mm} x \in I \\
+			\\
+			u(x, 0) = u_0(x), \hspace{2mm} x \in I
+		\end{array}  \right .
+	\end{align}
+	
+	The analytical solution of the previous problem was given in (\ref{Exact_Solution}), and we observe that it is not easy to evaluate it directly. Therefore, it is necessary to choose a suitable method of numerical integration to calculate the integrals involved, since they have exponential behavior that is noticeably affected when the parameter $\alpha$ is very small. However, precision problems can also arise because arithmetic operations can generate considerable errors if they are not performed correctly, and therefore this equation is not a good choice for finding solutions to the problem. \\
+	
+	In the next section, we will present the aforementioned spectral methods considering the linear problem obtained by using the transformation given by (\ref{Hopf_tranform}), And this will allow us to approximate the solutions of the problem (\ref{IVP_Burgers}) More easily and with excellent precision. In addition, this will give us the advantage of having solutions that can be considered exact and use them to compare them with those that will be obtained in the numerical experiments that we will describe in the second section when implementing these methods for the nonlinear problem (\ref{IVP_Burgers}), Since we will observe that the precision will be much less because we will need to use numerical methods to solve in the variable $t$, decreasing with respect to the parameter $\alpha$.
+    
+	\input{burgers_equation/deterministic/methods/Fourier_Methods}
+	\input{burgers_equation/deterministic/numerical_experiments/Numerical_Results}
+	

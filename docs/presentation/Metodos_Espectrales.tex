@@ -1,0 +1,93 @@
+\begin{frame}
+\frametitle{M\'etodos Espectrales}
+	\only<1->{
+	Para la versi\'on determinista de este estudio nos enfocamos en el siguiente conjunto:
+	\begin{equation*}
+	\phi_n (x) = e^{inx}, \hspace{2mm} \displaystyle \int_{0}^{2\pi} \phi_k (x) \overline{\phi_l (x)} dx = 2 \pi \delta{kl}.
+	\end{equation*}
+	}
+	\only<2->{
+	\begin{block}{Coeficientes de Fourier} 
+	\begin{equation*}
+	\hat{u}_n = \frac{1}{2 \pi} \displaystyle \int_{0}^{2 \pi} u(x) e^{-inx} dx, \hspace{3mm}  k = 0, \pm 1, \pm 2, \dots, \hspace{2mm} u(x) \in L^2 [0, 2 \pi].
+	\end{equation*}
+	\end{block}	
+	}
+	\only<3->{
+	\begin{block}{Series de Fourier}
+		\begin{equation*}  
+		F[u] \equiv \displaystyle \sum_{ |n| \leq \infty} \hat{u}_{n} e^{inx}.
+		\end{equation*}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}
+	\only<1->{
+	Definiendo	
+	\begin{equation*}
+		B = span\{e^{inx}: |n| \leq \infty \}
+	\end{equation*}
+	}
+	\only<2->{
+	\begin{block}{Operador de Proyecci\'on}	
+	\begin{equation*}
+	\mathcal{P}_N u(x) \equiv  \displaystyle \sum_{ |n| \leq \frac {N}{2}} \hat{u}_{n} e^{inx}.
+	\end{equation*}
+	\begin{equation*}
+	\hat{B}_{N} = span \left\{e^{inx}: |n| \leq \frac {N}{2} \right\},\hspace{0.2cm} dim(\hat{B}_{N}) = N + 1.
+	\end{equation*}	
+	\end{block}	
+	}
+	\only<3->{
+	Usando este operador nos facilita obtener derivadas
+	\begin{equation*}
+	\frac{d^q}{dx^q} \mathcal{P}_N u(x) = \displaystyle \sum_{ |n| \leq \frac {N}{2}} \hat{u}_{n} \frac{d^q}{dx^q} e^{inx} = \displaystyle \sum_{ |n| \leq \frac {N}{2}} (in)^q \hat{u}_{n}e^{inx}.
+	\end{equation*}
+	}
+\end{frame}
+
+\begin{frame}
+	\only<1->{
+	Otro operador utilizado en este estudio es definido por
+	\begin{equation*}
+	x_j = \frac{2 \pi j}{N + 1} , \hspace{0.5cm} j\in [0, \dots , N].
+	\end{equation*}
+	}
+	\only<2->{
+	Usando la regla de los trapecios
+	\begin{equation*}
+		\widetilde{u}_n = \frac{1}{N + 1}  \displaystyle \sum_{j = 0}^{N} u(x_j) e^{-in x_j},
+	\end{equation*}
+	}
+	\only<3->{
+	\begin{block}{Operador de Interpolacion}
+		\begin{equation*}
+			\mathcal{J}_N u(x) =  \displaystyle \sum_{ |n| \leq \frac {N}{2}} \widetilde{u}_n e^{inx}.
+		\end{equation*}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}
+	\only<1->{
+	La diferenciacion tambien es posible mediante
+	\begin{equation*}
+		\frac{d}{dx} \mathcal{J}_N u(x) = \displaystyle \sum_{|n| \leq N/2} in \widetilde{u}_n e^{inx}, \hspace{2mm} \widetilde{u}_n = \displaystyle \frac{1}{N + 1} \sum_{j=0}^{N} u(x_j) e^{-in x_j}.   
+	\end{equation*} 
+	}
+	\only<2->{
+	Otra manera m\'as pr\'actica es reescribiendo el operador:
+	\begin{equation*}
+		\mathcal{J}_N u(x) =  \displaystyle \sum_{j=0}^{N} u(x_j) h_j (x), \hspace{2mm} 	h_j (x) = \frac{1}{N + 1} \frac{\sin(\frac{N+1}{2}(x - x_j))}{\sin(\frac{x - x_j}{2})}
+	\end{equation*}
+	}
+	\only<3->{
+	\begin{block}{Matriz de Diferenciaci\'on}
+	\begin{equation*}
+		\label{matrix_DN_odd}
+		\widetilde{D}_{ij} = \begin{cases} -\frac{(-1)^{i+j}}{2} \left[\sin \left[ \frac{x_i - x_j}{2}\right]\right]^{-2} &   i \neq j, \\ \hspace{15mm} 0 &  i=j. \end{cases}
+	\end{equation*}
+	\end{block}
+	}
+\end{frame}

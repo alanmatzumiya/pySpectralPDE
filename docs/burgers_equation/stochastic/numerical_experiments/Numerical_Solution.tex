@@ -1,0 +1,19 @@
+\section{Numerical Solution for Burgers' Equation}
+	Let $\mathcal{H} = L^2 (0, 1)$. Let's consider an initial value problem for (\ref{burgers_stochastic}) as follows
+	\begin{align}
+	\label{burgers_stochastic2}
+	d X(\xi, t) = \left[\alpha \partial_{\xi}^2 X(\xi, t) + \frac{1}{2} \partial_\xi \left(X^2 (\xi, t)\right) \right] dt + dW_t (\xi, t), \hspace{0.2cm} \xi \in [0, 1] 
+	\end{align}
+	The boundary condition and its initial condition are respectively 
+	\begin{align*}
+	%\label{IC_burgers_stochastic2}
+	X(0, t) &= X(1, t) = 0 , \hspace{0.2cm} t > 0 \\
+	X(\xi, 0) &= x(\xi), \hspace{0.2cm}  x \in \mathcal{H},
+	\end{align*}
+	where $W$ is a cylindrical Wiener process on $\mathcal{H}$ as was given by \ref{cylindrical}, associated to a stochastic basis $(\Omega, \mathcal{F}, \mathbb{P}, \{\mathcal{F}_t\}_{t \geq 0})$, and as usually $\alpha > 0$ is the viscosity coefficient. \\
+	
+	Using the above problem, we will proceed to develop the implementation of the method described in the previous section.
+	
+	\input{burgers_equation/stochastic/numerical_experiments/Implementation}
+	\input{burgers_equation/stochastic/numerical_experiments/Initial_Condition}
+	\input{burgers_equation/stochastic/numerical_experiments/Numerical_Experiments}	

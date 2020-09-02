@@ -1,0 +1,34 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Brief History of Burgers' Equation}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Analytical solutions for Burgers' equation.}{5}{subsection.1.1.1}%
+\contentsline {paragraph}{Parabolic Equation.}{6}{section*.2}%
+\contentsline {section}{\numberline {1.2}The Stochastic Burgers' equation}{8}{section.1.2}%
+\contentsline {chapter}{\numberline {2}The Fundamental Theory For Spectral Methods}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Projection Operator: Continuous Fourier Expansion}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Differentiation of the Continuous Expansion}{17}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Approximation theory for Continuous Expansion.}{17}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Interpolation Operator: Discrete Fourier Expansion}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Even Expansion}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}The Odd Expansion}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Differentiation of the discrete expansions}{26}{subsection.2.2.3}%
+\contentsline {paragraph}{Differentiation Matrix.}{26}{section*.8}%
+\contentsline {subsection}{\numberline {2.2.4}Approximation theory for Discrete Expansion.}{28}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Solutions for Burgers' Equation in the Deterministic Version}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Fourier Spectral Methods}{34}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fourier-Galerkin}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Fourier-Collocation}{37}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Numerical Experiments}{39}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Numerical Solutions for Burgers' Equation with Viscosity}{39}{subsection.3.2.1}%
+\contentsline {subsubsection}{Simulations for Fourier-Galerkin Method}{39}{section*.9}%
+\contentsline {subsubsection}{Simulations for Fourier-Collocation Method}{48}{section*.15}%
+\contentsline {subsection}{\numberline {3.2.2}Numerical Solutions for Burgers' Equation without Viscosity}{55}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Numerical Solutions for Burgers' equation in the Stochastic Version}{61}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Spectral Approximation for Fokker-Plank-Kolmogorov Equation}{61}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Numerical Solution for Burgers' Equation}{64}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Method Description and Its Implementation}{64}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}A Functional to obtain Initial Conditions}{67}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Numerical Experiments}{68}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Discussion and Conclusions}{73}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Elements of Probability}{75}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}Basic Definitions}{75}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}Some Important Results in Probability Spaces}{78}{section.a.A.2}%

@@ -1,0 +1,67 @@
+\chapter{The Fundamental Theory For Spectral Methods}
+\label{Chapter_2}
+    
+	\vspace{0.3cm}
+	In this chapter, we will present the elements necessary to solve partial differential equations using spectral methods given as follows
+	\begin{align}
+	\label{general_problem}
+	\left \lbrace \begin{array}{ll}
+		&\frac{\partial u}{\partial t} = \mathcal{L} u, \hspace{3mm} x \in I, \hspace{3mm} t > 0,\\
+		\\
+		&u(x, 0) = g(x), \hspace{9mm} x \in I, 
+		\end{array}  \right .
+	\end{align}
+	where $u$ is defined in some Hilbert space $\mathcal{H}$, with initial condition $g(x) \in \mathcal{H}$ and $\mathcal{L}$ is some spatial differential operator, which allows us to represent the previous problem in another whose solution $u$ will be given by a linear combination of already known functions. \\
+	
+	To do this, suppose that $\mathcal{H}$ is a separable Hilbert space with the inner product $\langle \cdot, \cdot \rangle$. Therefore, we can represent the function $u$ in terms of a known orthonormal base of $\mathcal{H}$, which we will denote as $\{\phi_k \}_{k \in I}$, given as follows 
+	\begin{align*}
+		\displaystyle u = \sum_{k \in I} \langle \phi_k, u \rangle \phi_k.
+	\end{align*}
+	
+	There is a wide variety of families of base functions, which define different spectral methods. In this chapter, we will consider the well-known Fourier basis given by
+	\begin{align}
+		\label{base_phi}
+		\phi_n (x) = e^{inx}.
+	\end{align}
+	that form an orthogonal set with the standard interior product $L^2$ in the interval $(0, 2 \pi)$, that is,
+	\begin{align}
+	\label{ortho_phi}
+	\displaystyle \int_{0}^{2\pi} \phi_k (x) \overline{\phi_l (x)} dx = 2 \pi \delta{kl} = \left \lbrace \begin{array}{ll}
+	0 \hspace{3mm} &\text{if} \hspace{3mm} k \neq l, \\
+	2 \pi &\text{if} \hspace{3mm} k = l.
+	\end{array}  \right.
+	\end{align}
+	
+	We will denote as $B = span\{e^{inx}: |n| \leq \infty \}$ the set containing the Fourier bases. Therefore, we can define the Fourier series $F[u]$ for $u(x) \in L^2 [0, 2\pi]$ as follows 
+	\begin{equation}
+	\label{fourier_series}  
+		F[u] \equiv \displaystyle \sum_{ |n| \leq \infty} \hat{u}_{n} e^{inx},
+	\end{equation}
+	where
+	\begin{align}
+	\label{coeff_fourier}
+	\hat{u}_n = \frac{1}{2 \pi} \displaystyle \int_{0}^{2 \pi} u(x) e^{-inx} dx, \hspace{3mm}  k = 0, \pm 1, \pm 2, \dots.
+	\end{align}
+	which is known as the classical continuous series of trigonometric polynomials, where $\hat{u}_{n}$ are the Fourier coefficients. \\
+    
+    It is important noted that the integrals in (\ref{coeff_fourier}) exist if $u$ is Riemann-integrable, i.e., if $u$ is bounded and piecewise continuous in $(0, 2 \pi)$. More generally, the Fourier coefficients are defined for any function that is integrable in the Lebesgue sense. Also the relation (\ref{coeff_fourier}) associates with $u$ a sequence of complex numbers called the Fourier transform of $u$. It is possible as well to introduce a Fourier cosine transform and a Fourier sine transform of $u$, respectively, through the formulas
+    \begin{align}
+    \label{coeff_a_n}
+    	a_n = \frac{1}{2 \pi} \displaystyle \int_{0}^{2 \pi} u(x) \cos(nx) dx, \hspace{3mm}  n = 0, \pm 1, \pm 2, \dots,
+    \end{align}
+    and
+    \begin{align}
+    \label{coeff_b_n}
+    	b_n = \frac{1}{2 \pi} \displaystyle \int_{0}^{2 \pi} u(x) \sin(nx) dx, \hspace{3mm}  n = 0, \pm 1, \pm 2, \dots.
+    \end{align}
+    The three Fourier transforms of $u$ are related by the formula $\hat{u}_n = a_n - ib_n$ for $n = 0, \pm 1, \pm 2, \dots$. Moreover, if $u$ is a real valued function, $a_n$ and $b_n$ are real numbers, and $\hat{u}_{-n} = \hat{u}_n$. \\
+	
+	Based on the above, we will present two tools to build the methods that will be used in Chapter \ref{Chapter_3}, and that will be developed independently in the following two sections. In the first section, we will see that with the continuous Fourier expansion we can define a projection operator on a space of finite dimension that will allow us to approximate a function and its derivatives. In the second and last section, due to the complexity of the calculation of the previous integrals, we will see that it is possible to use quadrature rules to approximate them, and thus define an interpolation operator that will give us a discrete representation for a function and its derivatives.
+	
+	For these two operators, at the end of each section we will discuss the factors that determine the behavior of the series when used to approximate smooth functions, showing how fast they approach, when, and in what sense they are convergent.
+	
+	\newpage
+	\input{preliminaries/Projection_Operator}  
+	
+	\newpage
+	\input{preliminaries/Interpolation_Operator}	

@@ -1,0 +1,122 @@
+\subsection{Method Description and Its Implementation}
+	
+	\noindent We will denote the functions space that vanishes at the borders as $H^1_0 (0, 1)$. Setting $A = \alpha \partial^2_{\xi}$ and $B = \frac{1}{2} \partial_{\xi} (x^2)$, $x \in \mathcal{H}$, with its domains $D(A) = H^2 (0, 1) \cap H^1_0 (0, 1)$ and $D(B) = H^1_0 (0, 1)$ respectively, then by (\ref{stochastic_equation}), the equation (\ref{burgers_stochastic2}) can be rewritten as
+	\begin{align*}
+    	dX &= [AX + B(X)]dt + dW_t \\
+        X(0) &= x, \hspace{0.2cm} x \in \mathcal{H}
+	\end{align*}	
+	where $A$  have eigenfunctions in $\mathcal{H}$ given by
+	\begin{align*}
+		e_k (\xi) = \sqrt{2} \sin{(k \pi \xi)}, \hspace{3mm} \xi \in [0, 1], \hspace{3mm} k \in \mathbb{N}
+	\end{align*}
+	
+	\noindent Note that the operator $A$ satisfies $Ae_k = -\alpha \pi^2 k^2 e_k$ for $k \in \mathbb{N}$, then if we set $\Lambda = (-A)^{-1}$ we have that $\Lambda^{-1/2} e_k = \sqrt{2 \alpha} \pi |k| e_k$. \\	
+				
+	Therefore, as in (\ref{infinite_system}) we need to solve the following system
+	\begin{align}
+		\dot{u}_{m} (t) = -u_{m} (t) \lambda_{m} + \displaystyle \sum _{n \in \mathcal{J}} u_{n} (t) C_{n, m} , \hspace{0.1cm} n, m \in \mathcal{J}
+	\end{align}
+		
+	\noindent We need to calculate the value of the constants $C_{n,m}$ , then we need to calculate expressions such as $B(x)$, $D_x H_n (x)$. Note that $x$ can be written as $x = \displaystyle \sum_{k} \beta_k e_k$ , with $\beta_k := \langle x, e_k \rangle_{\mathcal{H}}$. Then we have
+	\begin{align*}
+		B(x) = \frac{1}{2} \partial_{\xi} \left( \displaystyle \sum_k \beta_k e_k \right)^2 = \frac{1}{2} \partial_{\xi} \left[ \sum_l
+		\sum_k \beta_l \beta_k e_l e_k \right] = \frac{1}{2} \sum_l
+		\sum_k \beta_l \beta_k (e_l e'_k + e'_l e_k)
+	\end{align*}
+	and for $D_x H_n (x)$ we have
+	\begin{align*}
+		D_x H_n (x) = \displaystyle \sum_{j = 1}^{\infty} \prod_{i = 1. i \neq j}^{\infty} P_{n_i} (\langle x, \Lambda^{-1 / 2} e_i \rangle_{\mathcal{H}}) P'_{n_j} (\langle x, \Lambda^{-1 / 2} e_j \rangle_{\mathcal{H}}) \Lambda^{-1 / 2} e_j 
+	\end{align*}
+	
+	\noindent Therefore, $C_{n, m}$ given by (\ref{Cnm}) gives
+	\begin{align*}
+		C_{n, m} =& \displaystyle \frac{1}{2} \int_{\mathcal{H}} H_m (x) \mu (dx) \sum_{j = 1}^{\infty} \prod_{i = 1, i \neq j}^{\infty} P_{n_i} (\langle x, \Lambda^{-1 / 2} e_i \rangle_{\mathcal{H}}) P'_{n_j} (\langle x, \Lambda^{-1 / 2} e_j \rangle_{\mathcal{H}})  \sqrt{2 \alpha} \pi |j| \\
+		&\cdot \sum_l
+		\sum_k \beta_l \beta_k (e_l e'_k + e'_l e_k) \\
+		=& \displaystyle \frac{1}{2} \int_{\mathcal{H}} \mu (dx) \sum_{j = 1}^{\infty} \sqrt{2 \alpha} \pi |j| P_{m_j} (\langle x, \Lambda^{-1 / 2} e_j \rangle_{\mathcal{H}}) P'_{n_j} (\langle x, \Lambda^{-1 / 2} e_j \rangle_{\mathcal{H}}) \\  &\cdot \prod_{i = 1, i \neq j}^{\infty} P_{n_i} (\langle x, \Lambda^{-1 / 2} e_i \rangle_{\mathcal{H}}) P_{m_i} (\langle x, \Lambda^{-1 / 2} e_i \rangle_{\mathcal{H}}) \\
+		&\cdot \sum_l
+		\sum_k \beta_l \beta_k (e_l e'_k + e'_l e_k) 
+	\end{align*}
+
+	So, to obtain a truncated approximation of the solution, the following set of indices is considered
+	\begin{align}
+		J^{M, N} = \{\gamma = (\gamma_i, \hspace{1mm} 1 \leq \gamma_i \leq M  ) \hspace{1mm} | \hspace{1mm} \gamma_i \in \{0, 1, \cdots, N \} \}
+	\end{align}
+	this is the set of $M$-tuple which can take values in the set $\{0, 1, \cdots, N \}$. \\
+	
+	For $N_1 \in \mathbb{N}$ define as the set $S_{N_1} = \{n_1 , n_2 , \cdots , n_{N_1} : n_i \in J^{M,N} , i = 1, \cdots , N_1 \}$. Then for $n, m \in S_{N}$ we have 
+	\begin{align*}
+		\bar{C}_{n, m} =& \displaystyle \frac{1}{2} \sum_{j = 1}^{\infty} \sqrt{2 \alpha} \pi |j| \int_{\mathcal{\mathbb{R}^M}} P_{m_j} (\xi_j) P'_{n_j} (\xi_j) \mu (d \xi_j) \\  
+		&\cdot \prod_{i = 1, i \neq j}^{M} P_{m_i} (\xi_i) P_{n_i} (\xi_i) \mu (d \xi_i) \sum_{l=1}^{M} \sum_{k=1}^{M} \beta_l \beta_k (e_l e'_k + e'_l e_k)
+	\end{align*}
+
+	and for $m_1, m_2, \cdots, m_M \in J^{M, N}$ the system (\ref{infinite_system}) give us
+	\begin{align}
+		\label{finite_system}
+		\dot{u}_{m_i} (t) = -u_{m_i} (t) \lambda_{m_i} + \displaystyle \sum_{j=1}^{M} u_{n_j} (t) C_{n_j, m_i} , \hspace{2mm} 1 \leq i \leq M	
+	\end{align}
+	
+	The solutions of the previous system can be calculated in terms of their eigenvectors by establishing the following vector
+	\begin{equation*}
+		U^M (t) =
+		\begin{pmatrix}
+			u_{m_1} (t) & u_{m_2} (t) & \dots & u_{m_M} (t)
+		\end{pmatrix}^T   
+	\end{equation*}
+	and for its derivatives
+	\begin{equation*}
+		\dot{U}^M (t) =
+		\begin{pmatrix}
+			\dot{u}_{m_1} (t) & \dot{u}_{m_2} (t) & \dots & \dot{u}_{m_M} (t)
+		\end{pmatrix}^T   
+	\end{equation*}
+	
+	So, we can now write the system (\ref{finite_system}) as 
+	\begin{align}
+		\label{finite_system_vectorial}
+		\dot{U}^M (t) = A U^M (t)
+	\end{align}
+	where the matrix $A$ is given by
+	\begin{equation*}
+		A =
+		\begin{pmatrix}
+			-\lambda_1 + C_{1,1} & C_{2,1} & \dots & C_{M-1,1} & C_{M,1} 
+			\\
+			C_{1,2} & -\lambda_2 + C_{2,2} & \dots & C_{M-1,2} & C_{M,2}  
+			\\
+			\vdots & \vdots & \ddots & \vdots & \vdots
+			\\
+			C_{1,M-1} & C_{2,M-1} & \dots & -\lambda_{M-1} + C_{M-1,M-1} & C_{M,M-1} 
+			\\
+			C_{1,M} & C_{2,M} & \dots & C_{M-1,M} & -\lambda_{M} + C_{M,M} 
+		\end{pmatrix}
+	\end{equation*}
+	where $\lambda_i = \lambda_{mi}$ and $C_{i, j} = C_{n_i, m_j}$ para $1 \leq i, j \leq M$. \\
+	
+	\noindent Then, if $A$ has $M$ real and distint eigenvalues $\eta_i$ and $M$ eigenvectors $V_i$, then the solution to (\ref{finite_system_vectorial}) is given by
+	\begin{align}
+		\label{solution_finite_system}
+		U^M (t) = \displaystyle \sum _{j = 1}^{M} c_i V_i e^{\eta_i t}
+	\end{align}
+
+	In the case when some eigenvalue is complex, we can write it together with its eigenvector as follows
+	\begin{align*}
+		V &= a + i b, \hspace{3mm} \eta = \beta + i \mu
+	\end{align*}
+	to get the solutions
+	\begin{align*}
+		e^{\beta t} (a \cos(\mu t) - b \sin(\mu t)), \hspace{2mm} e^{\beta t} (a \sin(\mu t) + b \cos(\mu t))
+	\end{align*}
+	which are real and different. \\
+	
+	Then we can write the approximation of the solution of (\ref{kolmogorov}) as
+	\begin{align}
+		\label{finite_approximation}
+		u_M (x, t) = \displaystyle \sum_{ n \in J^{M, N} } u_n (t) H_n (x) = U^M (t) H^M (x), \hspace{2mm} x \in \mathcal{H}, \hspace{2mm}, t \in [0, T].
+	\end{align}
+
+	Also, if $u (\xi, t) = \mathbb{E} \left [X_t (\xi) \right]$, then satisfies the problem given by
+	\begin{align*}
+		\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial \xi^2} + \partial_{\xi} \left[ u(\xi, t) \right]^2
+	\end{align*}
+	with the initial condition $u(\xi, 0) = \mathbb{E} \left[ X_0 \right]$. 

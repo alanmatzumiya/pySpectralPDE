@@ -1,0 +1,63 @@
+\subsection{A Functional to obtain Initial Conditions}
+	The interesting thing about the equation (\ref{kolmogorov}), is that there is no standard way to define an initial condition. For this problem, a functional is defined that acts in the initial condition, and because there are different ways of defining this functional, the method may change. For this work, the following functional was chosen 
+	\begin{align*}
+		u^{z_0}_0 (g) := g(z_0), \hspace{2mm} \text{for fixed} \hspace{2mm} z_0 \in [0, 1].
+	\end{align*}
+	
+	To construct the initial condition, the following set of points is considered 
+	\begin{align*}
+		P = \{ z_i, \hspace{1mm} 0 \leq i \leq p \hspace{1mm} : \hspace{1mm} z_0 = 0, \hspace{1mm} z_p = 1 \}
+	\end{align*}
+	
+	\noindent Then for each point $z_i \in P$ such that $X_0 (z_i) = X(0, z_i)$ set $u_0 (x)$ as the evaluation functional $z_i \longrightarrow X^x_t (z_i)$. Then from (\ref{solution_kolmogorov}) we obtain
+	\begin{align}
+		u(0, x) = \mathbb{E}[u^{z_i}_0 (X^x_0)] = X^x (0, z_i) = x(z_i)
+	\end{align}
+	For other hand
+	\begin{align*}
+		u (0, x) = \displaystyle \sum _{n \in \mathcal{J}^{M, N}} u_{n}(0) H_n (x)
+	\end{align*}
+	multiplying for $H_m (x)$ and integrating over space $\mathcal{L}^2 (\mathcal{H}, \mu)$ 
+	\begin{align*}
+		u_m (0) = \displaystyle \int_{\mathcal{H}} x(z_i) H_m (x) \mu (dx)
+	\end{align*}
+	
+	\noindent Note that in the direction of the eigenfunction $e_k$ the expression $x$ can be written as $(x, e_k )_{\mathcal{H}} e_k$, then we can write $H_m (x) x (z_i)$ in the direction $e_k$ as $P_{m_k} (\xi_k) (x, e_k )_{\mathcal{H}} e_k (z_i)$ with $\xi_k = (x, \Lambda^{-\frac{1}{2}} e_k) = \| \lambda_k \| (x, e_k )_{\mathcal{H}}$ and $P_{m_k}$ is given by (\ref{hermite_polynomials}). Then we have
+	\begin{align*}
+		u^{z_i}_m (0) &= \displaystyle \int_{\mathcal{H}} x(z_i) H_m (x) \mu (dx) \\
+		&= \int_{\mathbb{R}^N} \sum_{k=1}^{\infty} P_{m_k} (\xi_k) (x, e_k )_{\mathcal{H}} e_k (z_i) \mu (d\xi_1, d\xi_2, \cdots) e_k \\
+		&= \int_{\mathbb{R}^N} \sum_{k=1}^{\infty} P_{m_k} (\xi_k) \frac{\xi_k}{\lambda_k} e_k (z_i) \mu (d\xi_1, d\xi_2, \cdots) e_k \\
+		&= \sum_{k=1}^{\infty} \frac{e_k}{\lambda_k} \int_{\mathbb{R}}  P_{m_k} (\xi_k) \xi_k (z_i) \mu (d\xi_k)
+	\end{align*}
+	truncating the above expression we have
+	\begin{align}
+		\label{IC_approx}
+		u^{z_i}_m (0) \approx \displaystyle \sum_{k=1}^{M} \frac{e_k}{\lambda_k} \int_{\mathbb{R}}  P_{m_k} (\xi_k) \xi_k (z_i) \mu (d\xi_k)
+	\end{align} 
+	
+	\noindent Setting the equation (\ref{IC_approx}) for each element from $u^{z_i}_m$ as $u^{z_i}_{m_j} (0) = u_j (0)$, $1 \leq j \leq M$ and by (\ref{solution_finite_system}) evaluated for $t=0$, then the initial condition can be written as
+	\begin{equation*}	
+		\begin{pmatrix}
+			u_1 (0) \\ u_2 (0) \\ \vdots \\ u_{M-1} (0) \\	u_M (0)
+		\end{pmatrix}
+		= 
+		\begin{pmatrix}
+			V1 & V2 & \dots & V_{M-1} & V_M
+		\end{pmatrix}
+		\begin{pmatrix}
+			c_1 \\ c_2 \\ \vdots \\ c_{M-1} \\ c_M
+		\end{pmatrix}
+	\end{equation*}
+	and the constants $c_j$ are calculated as
+	\begin{equation*}
+		\begin{pmatrix}
+			c_1 \\ c_2 \\ \vdots \\ c_{M-1} \\ c_M 
+		\end{pmatrix}
+		=	
+		\begin{pmatrix}
+			V1 & V2 & \dots & V_{M-1} & V_M
+		\end{pmatrix}^{-1}
+		\begin{pmatrix}
+			u_1 (0) \\ u_2 (0) \\ \vdots \\ u_{M-1} (0) \\	u_M (0)
+		\end{pmatrix}
+	\end{equation*}

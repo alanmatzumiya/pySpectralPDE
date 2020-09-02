@@ -1,0 +1,75 @@
+\section{Spectral Approximation for Fokker-Plank-Kolmogorov Equation}
+
+	The method that we are going to describe in this section will be developed in a space of Hilbert $\mathcal{H}$ with interior product $\langle \cdot, \cdot \rangle_{\mathcal{H}}$, where we will define a Gaussian measure $\mu$ with zero mean. Based on \cite{Delgado2016}, the Fokker-Planck-Kolmogorov equation is presented as follows
+	\begin{align}
+		\label{kolmogorov}
+		\frac{\partial u}{\partial t} = \frac{1}{2} Tr(D^2 u) + \langle A(x), Du\rangle_{\mathcal{H}} + \langle B(x), Du\rangle_{\mathcal{H}}, \hspace{0.1cm} x \in D(A)
+	\end{align}
+	where $Tr$ is the trace operator, $A: D (A) \subset \mathcal{H} \rightarrow \mathcal{H}$ is a linear differential operator, $B: D (B) \subset \mathcal{H } \rightarrow \mathcal{H}$ is a nonlinear operator, and $D$ represents the Frechet derivative. \\
+	
+	The main idea of ​​the method is to solve the previous equation associating the following stochastic differential equation
+	\begin{align}
+		dX_t = AX_t dt + B(X_t) dt + dW_t
+		\label{stochastic_equation}
+	\end{align}
+	where $W_t$ is a process $Q$-Wiener as defined in (\ref{cylindrical}), and the solution for the equation (\ref{kolmogorov}) is defined as follows
+	\begin{align}
+		u(x, t) = \mathbb{E} \left[ u_0 (X^x_t) \right] 
+		\label{solution_kolmogorov}
+	\end{align}
+	where $u_0: \mathcal{H} \rightarrow \mathbb{R}$, and $X_t^x$ is the solution of the equation (\ref{stochastic_equation}). \\
+	
+	Following our reference, the solution to the problem (\ref{kolmogorov}) is represented by an expansion known as Fourier-Hermite which is given by the following series
+	\begin{align}
+		\label{infinite_approximation}
+		u(x, t) = \displaystyle \sum_{n \in J} u_n (t) H_n (x), \hspace{2mm} x \in \mathcal{H}, \hspace{2mm} t \in [0, T],
+	\end{align}  
+	where $u_n : [0, T] \rightarrow \mathbb{R}$ and $H_n (x)$ are the Hermite functionals defined in \ref{hermite_funcionals}, and $J$ as in \ref{Conjunto_J}. \\
+	  
+	The above expansion can be justified by the Lemmas \ref{dense} and \ref{eigen}, and also is known as the deterministic Wiener-Chaos descomposition. Similarly, as we have seen in the previous chapter, it must satisfy the problem (\ref{kolmogorov}). For this, define the following operator
+	\begin{align}
+	\label{operator_L}
+		\mathcal{L} u = \frac{1}{2} Tr(D^2 u) + \langle Ax, Du\rangle_{\mathcal{H}}, \hspace{2mm} x \in \mathcal{H}
+	\end{align}
+	which represents the linear part of (\ref{kolmogorov}), and by Lemma \ref{eigen} satisfies the following
+	\begin{align}
+		\label{Descomposition_L}
+		\mathcal{L} u = - \sum_{n \in J} u_n (t) \lambda_n H_n (x).
+	\end{align}	
+	
+	So, substituting the expansion on the left side of the equation (\ref{kolmogorov}) we get 
+	\begin{align}
+		\label{aprox_time}
+		\frac{\partial u}{\partial t} = \displaystyle \sum_{n \in J}  \dot{u}_n (t) H_n (x),
+	\end{align} 
+	and for the non-linear term 
+	\begin{align*}
+		\langle B(x), Du\rangle_{\mathcal{H}} = \left\langle B(x), D_x \displaystyle \sum_{n \in J} u_n (t) H_n (x)  \right\rangle_{\mathcal{H}} 
+	\end{align*}	
+	\begin{align}
+		\label{aprox_B}
+		\hspace{8mm} = \displaystyle \sum_{n \in J} u_n (t) \left( B(x), D_x H_n (x) \right)_{\mathcal{H}}
+	\end{align}
+	
+	Therefore, by (\ref{Descomposition_L} - \ref{aprox_B}) the equation (\ref{kolmogorov}) can be written as
+	\begin{align*}
+		\displaystyle \sum_{n \in J}  \dot{u}_n (t) H_n (x) = - \sum_{n \in J} u_n (t) \lambda_n H_n (x) + \sum_{n \in J} u_n (t) \left( B(x), D_x H_n (x) \right)_{\mathcal{H}}
+	\end{align*}
+
+	To develop the above, in the space $\mathcal{H}$ define the Gaussian measure $\mu (dx) = \frac{1}{\sqrt{2 \pi}} e^{- \frac{x^2 }{2}}$. So, multiplying the previous equation by $H_m (x)$, $m \in J$ and integrating over $\mathcal{H}$ with respect to the measure $\mu(dx)$ we have to
+	\begin{align*}
+		\displaystyle \sum_{n \in J}  \dot{u}_n (t) \int_{\mathcal{H}} H_m (x) H_n (x) \mu (dx) = &- \sum_{n \in J} u_n (t) \lambda_n \int_{\mathcal{H}} H_m (x)  H_n (x) \mu (dx) \\
+		&+ \sum_{n \in J} u_n (t) \int_{\mathcal{H}} H_m (x) \left( B(x), D_x H_n (x) \right)_{\mathcal{H}} \mu (dx)
+	\end{align*}
+	and also using the orthogonality of the system $\{H_m (x) \}$, we get the following infinite system of coupled ordinary differential equations
+	\begin{align}
+		\label{infinite_system}
+		\dot{u}_{m} (t) = -u_{m} (t) \lambda_{m} + \displaystyle \sum _{n \in \mathcal{J}} u_{n} (t) C_{n, m} , \hspace{2mm} n, m \in \mathcal{J}	
+	\end{align}\textbf{}
+	where $C_{n, m}$ is given by
+	\begin{align}
+		\label{Cnm}
+		C_{n, m} = \displaystyle  \int_{\mathcal{H}} H_m (x) \left( B(x), D_x H_n (x) \right)_{\mathcal{H}} \mu (dx)
+	\end{align} 
+
+	We need to truncate and solve the above system to get approximations of the solution to the equation (\ref{kolmogorov}), which will be done in the next section focusing on the Burgers' equation given by (\ref{burgers_stochastic}).

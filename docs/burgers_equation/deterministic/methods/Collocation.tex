@@ -1,0 +1,64 @@
+\subsection{Fourier-Collocation}
+	\label{Collocation}
+	
+	The main idea of ​​this method that we will see next is very similar to the Fourier-Galerkin method, except that we will use the interpolation operator described in (\ref{Interpolation_operator_odd}) for an odd number of points in the grid. For this, we must use another polynomial space, which we already defined in chapter \ref{Chapter_2} as $\widetilde{B}_N$ given by
+	\begin{align*}
+		\widetilde{B}_N = span\left\{\left(cos(nx), \hspace{0.2cm} 0 \leq n \leq \frac{N}{2} \right)\cup  \left(sin(nx), \hspace{0.2cm} 1 \leq n \leq \frac{N}{2} - 1 \right)\right\}.
+	\end{align*} 
+	
+	Now we will look for a solution to the problem (\ref{Bugers_Lineal}) in the space given by $S_N = \widetilde{B}_N \cap H^2_p [0, 2 \ pi]$, using the discrete expansion for the function $\varphi$ as follows
+	\begin{align}
+	\label{Discrete_phi}		
+		\mathcal{J}_N \varphi (x, t) =  \displaystyle \sum_{|n| \leq \frac{N}{2}} \widetilde{\varphi}_n (t) e^{inx}, \hspace{2mm}
+			\widetilde{\varphi}_n (t) =  \displaystyle \sum_{j=0}^{2N} \varphi (x_j, t)  e^{-in x_j}
+	\end{align} 
+	where $x_j$ are given by
+	\begin{align*}
+		xj = \frac{2 \pi j}{2N + 1}, \hspace{2mm} j = 0, 1, \dots, 2N.
+	\end{align*}
+	
+	Remember that by (\ref{Lagrange_Odd}) the previous expansion can be written equivalently and also conveniently as
+	\begin{align*}
+		\mathcal{J}_N \varphi (x, t) =  \displaystyle \sum_{j=0}^{2N} \varphi (x_j, t) \psi_j (x)
+	\end{align*}
+	where $\psi_j (x_i) = \delta_{ij}$ for $i, j = 0, 1, \dots, 2N$, and satisfies $\mathcal{J}_N \varphi (x_j, t) = \varphi (x_j, t)$ for each $j$.
+	
+	Using the previous expansion in the equation (\ref{Bugers_Lineal}) we can obtain a residual function as we obtained it in the Fourier-Galerkin method given as follows
+	\begin{align*}
+		R_N (x, t) = \frac{\partial \mathcal{J}_N \varphi (x, t)}{\partial t} - \alpha \frac{\partial}{\partial x^2} \mathcal{J}_N \varphi (x, t),
+	\end{align*}	
+	and similarly, we must force the orthogonality, for which we must remember by (\ref{Coincidence_Inner}) that in this case, the discrete product coincides with the continuum, therefore, we have to
+	\begin{align*}
+		\langle R_N, \psi_j \rangle_N = \int_{I} R_N (x, t) \overline{\psi}_j (x) dx = 0, \hspace{2mm} \text{for} \hspace{2mm} j = 0, 1, \dots, 2N.
+	\end{align*} 
+	
+	Since $\mathcal{J}_N \varphi (x_j, t) = \varphi (x_j, t)$ for every $j= 0, 1 \dots, 2N$, the orthogonality can be satisfied by solving the following problem
+	\begin{align}
+	\label{Collocation_Linear}	
+		\frac{d \mathcal{J}_N \varphi (x_j, t)}{dt} = \alpha \mathcal{J}_N \frac{\partial}{\partial x^2} \mathcal{J}_N \varphi (x_j, t), \hspace{2mm} j = 0, 1 \dots, 2N
+	\end{align}
+	which is a system of $2N + 1$ ordinary differential equations that can be solved using the initial condition given by
+	\begin{align*}
+		\mathcal{J}_N \varphi (x_j, t) =  \varphi_0 (x_j), , \hspace{2mm} j = 0, 1 \dots, 2N
+	\end{align*}
+	
+	A convenient way to solve the above problem is to solve for each fixed $ j $ the following system of differential equations for the coefficients $ \widetilde{\varphi}_n$ given by
+	\begin{align*}
+		\frac{d \widetilde{\varphi}_n (t)}{dt} =  \alpha n^2 \widetilde{\varphi}_n (t), \hspace{2mm} |n| \leq 2N
+	\end{align*}
+	which is exactly the same that we obtained in the Fourier-Galerkin method, with the solution given by
+	\begin{align*}
+		\widetilde{\varphi}_n (t) = \widetilde{\varphi}_n (0) e^{- \alpha n^2 t}, \hspace{2mm} |n| \leq 2N
+	\end{align*}
+
+	Finally, after solving the previous problem for each $j$ we can express the solution with the expansion given by (\ref{Discrete_phi}), which is basically the same solution that we have found using the Fourier-Galerkin method. \\
+	
+	When we need to use some numerical method to solve in the variable $ t $, it is better to express the system of differential equations by configuring the following vector
+	\begin{align*}
+		\varphi_N (t) = \left[ \varphi(x_0, t), \varphi(x_1, t), \dots, \varphi(x_{2N}, t) \right]^T
+	\end{align*} 
+	and using the differentiation matrix given by (\ref{matrix_DN_odd}) to obtain
+	\begin{align*}
+		\frac{d}{dt} \varphi_N (t) = \alpha D^{(2)}_{2N} \varphi_N (t)
+	\end{align*}
+	In this way we can calculate derivatives directly in real space, being a great advantage that we will discuss in the next section when implementing numerical methods based on the previous representation.
