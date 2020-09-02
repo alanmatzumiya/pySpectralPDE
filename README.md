@@ -12,7 +12,7 @@ dynamical systems in physics. The focus of the package lies on easy usage to
 explore the behavior of PDEs. However, core computations can be compiled
 transparently using numba for speed.
 
-[Try it out online!](https://mybinder.org/v2/gh/github.com/alanmatzumiya/Spectral-Methods/burgers/master?filepath=examples%2Fjupyter)
+[Try it out online!](https://mybinder.org/v2/gh/github.com/alanmatzumiya/spectral-methods/PySpectral/master?filepath=examples%2Fjupyter)
 
 Installation
 ------------
