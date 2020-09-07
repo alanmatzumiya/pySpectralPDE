@@ -1,11 +1,13 @@
 from pathlib import Path
 from setuptools import setup, find_packages
+from PySpectral import version
 
+__version__ = version.__version__
 
 BASE_PATH = Path(__file__).resolve().parent
 
 # read the version from the particular file
-with open(BASE_PATH / "PySpectral" / "version.py", "r") as f:
+with open(BASE_PATH / "pySpectralPDE" / "version.py", "r") as f:
     exec(f.read())
 
 DOWNLOAD_URL = f"https://github.com/alanmatzumiya/spectral-methods/archive/v{__version__}.tar.gz"
@@ -15,8 +17,8 @@ with open(BASE_PATH / "README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="PySpectral",
-    package_data={"PySpectral": ["py.typed"]},
+    name="pySpectralPDE",
+    package_data={"pySpectralPDE": ["py.typed"]},
     packages=find_packages(),
     zip_safe=False,  # this is required for mypy to find the py.typed file
     version=__version__,
