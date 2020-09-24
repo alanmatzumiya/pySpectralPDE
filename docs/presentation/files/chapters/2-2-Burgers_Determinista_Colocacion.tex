@@ -1,0 +1,71 @@
+\label{Interpolacion}
+\begin{frame}{Operador Interpolacion \hspace{5cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+    \only<1->{
+    \begin{block}{Puntos de Colocacion}
+    \begin{align*}
+        x_j = \frac{2 \pi}{N + 1} j , \hspace{0.5cm} j\in [0, \dots , N],
+    \end{align*}
+    \end{block}
+    }
+    \only<2->{
+    \begin{block}{Aproximacion de Coeficientes: Regla del Trapecio}
+    \begin{align*}
+        \hat{u}_n \approx \widetilde{u}_n = \frac{1}{N + 1} \displaystyle \sum_{j = 0}^{N} u(x_j) e^{-in x_j}
+    \end{align*}    
+    \end{block}
+    }
+    \only<3->{
+    \begin{block}{Interpolador}
+    Para cada $j \in [ 0, \dots , N ]$ satisface $\mathcal{J}_N u (x_j) =  u (x_j)$, y
+    \begin{align*}
+        \mathcal{J}_N u(x) =  \displaystyle \sum_{ |n| \leq \frac {N}{2}} \widetilde{u}_n e^{inx}
+	\end{align*}
+	\end{block}
+	}
+\end{frame}
+
+\label{Colocacion}
+\begin{frame}{Metodo de Fourier-Colocacion \hspace{3cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Fourier-Colocacion}
+	Para cada $j = 0, 1, \dots, 2N$, $t \geq 0$ configurarmos 
+	$u_N (t) = [u_N (x_i , t), u_N (x_1 , t), \dots, u_N (x_{2N} , t]^T$, $u_N (0) =  u_0$, y debe satisfacer,
+	\begin{align*}
+		\left\langle \frac{\partial u_N}{\partial t} - \alpha \frac{\partial^2 u_N}{\partial x^2} + \frac{1}{2} \mathcal{J}_N (u_N^2)_x, \phi \right\rangle_N = 0, \hspace{2mm} t > 0, \hspace{2mm}
+	\end{align*}
+	Equivalentemente,
+	\begin{align*}
+		\frac{d u_N (t)}{dt} =  \alpha D_N^2 u_N (t) - \frac{1}{2} D_N u^2_N (t), 
+	\end{align*}
+	\end{block}
+	}
+	\only<3->{
+	\begin{block}{Matriz de Diferenciacion}
+	\begin{align*}
+	    \widetilde{D}_{ij} = -\delta_{ij} \frac{(-1)^{i+j}}{2} \left[\sin \left[ \frac{x_i - x_j}{2}\right]\right]^{-2}, D^2_N = D_N \dot D_N
+	\end{align*}
+	\end{block}
+	}
+\end{frame}
+\label{Solucion-Colocacion}
+\begin{frame}{Solucion Numerica: Colocacion \hspace{3cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Solucion Numerica: Discretizacion Semi-Implicita}
+    	Para $\Delta t \in \mathbb{R}$ y $M \in \mathbb{N}$ fijos,  $t_j = j \Delta t, \hspace{2mm} j = 0, 1, \dots, M$ definimos:
+	    \begin{align*}
+		u_N (t_{i + 1} ) =  \displaystyle \left[I_N + \frac{\Delta t}{2} u_{0} \Lambda_N \right]^{-1} e^{-\Delta t \Lambda^0_N} \left[ u_N (t_{i})  - \frac{\Delta t}{2} D_N u^2_N (t_{i}) \right]
+	\end{align*}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}{Simulacion: Colocacion \hspace{5cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+    \only<1->{
+	\begin{block}{Configuracion del Problema.  \hyperlink{Figuras-Colocacion}{\beamergotobutton{Simulaciones}}}
+	Para los siguientes resultados numericos se considero lo siguiente	
+	\begin{equation*}
+		u_0 (x) = e^{-0.05 x^2}, \hspace{3mm} x \in [-60, 60], \hspace{2mm} t \in [0, 100]. 
+	\end{equation*}
+	\end{block}
+	}
+\end{frame}

@@ -1,0 +1,47 @@
+\label{FPK}
+\begin{frame}{Ecuacion de Fokker-Planck-Kolmogorov (FPK) \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Ecuacion de Kolmogorov}
+    	\begin{equation*}
+    		\frac{\partial u}{\partial t} = \frac{1}{2} Tr(QD^2 u) + \langle Ax, Du\rangle_{\mathcal{H}} + \langle B(x), Du\rangle_{\mathcal{H}}, \hspace{0.1cm} x \in D(A)
+    	\end{equation*}
+	\end{block}
+	}
+	\only<2->{
+	\begin{block}{Ecuacion Estocastica. Ruido: Proceso de Wiener}
+	\begin{align*}
+		dX &= [AX + B(X)]dt + dW_t \\
+		X(0) &= x, \hspace{0.2cm} x \in \mathcal{H}
+	\end{align*}
+	\end{block}
+	}
+	\only<3->{
+	\begin{block}{Solucion de Kolmogorov: Asociacion}
+	\begin{equation*}
+		u(x, t) = \mathbb{E} \left[ u_0 (X^x_t) \right], 
+	\end{equation*}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}{Aproximacion de la Ecuacion de FPK \hspace{1cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	La solucion espectral esta dada como
+	\begin{block}{Expansion de Wienner-Chaos: Polnomios de Hermite}
+	\begin{align*}
+		u(t, x) = \displaystyle \sum _{n \in \mathcal{J}} u_{n}(t) H_n (x), \hspace{0.1cm} x \in \mathcal{H}, \hspace{0.1cm} t \in [0, T],
+	\end{align*}		
+	\end{block}
+	}
+	\only<2->{
+	substituyendo en la ecuacion de Kolmogorov
+	\begin{block}{Aproximacion}
+	\begin{equation*}
+		\dot{u}_{m} (t) = -u_{m} (t) \lambda_{m} + \displaystyle \sum _{n \in \mathcal{J}} u_{n} (t) C_{n, m} , \hspace{0.1cm} n, m \in \mathcal{J}
+	\end{equation*}
+	\begin{equation*}
+		\mathcal{J} = \{\alpha = (\alpha_i,i \geq 1) | \alpha_i \in \mathbb{N}\cup \{0\}, |\alpha|:= \displaystyle \sum _{i = 0}^{\infty}\alpha_i < \infty\}
+	\end{equation*}
+	\end{block}
+	}
+\end{frame}

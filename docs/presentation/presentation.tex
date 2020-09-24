@@ -1,0 +1,90 @@
+%===============================================================================
+% Template Name:      SUnORE Starter Presentation template
+% Template URI:       http://sunore.co.za/sunore-presentation/
+% Description:        Starter Presentation template for SUnORE 
+%                     Department of Industrial Engineering, 
+%                     Stellenbosch University
+% Version:            1.1.0
+% Author:             Johan Janse van Rensburg
+% Author URI:         http://johanjvrens.co.za/
+% License:            MIT License
+% License URI:        http://opensource.org/licenses/MIT
+%===============================================================================
+\documentclass[serif,11pt]{beamer}
+
+%=================================================
+% theme and color
+%=================================================
+\usetheme{Warsaw} %Themes http://www.hartwork.org/beamer-theme-matrix/
+\definecolor{colorA}{RGB}{96, 34, 59}
+\definecolor{colorB}{RGB}{140, 151, 154}
+%\definecolor{secinhead}{RGB}{249,196,95}
+%\definecolor{titlebg}{RGB}{51,51,51}
+\setbeamercolor{structure}{fg=colorA,bg=colorB}
+%\setbeamercolor{secsubsec}{fg=secinhead,bg=black}
+%\setbeamercolor{frametitle}{fg=secinhead,bg=titlebg}
+
+%=================================================
+% packages and new commands
+%=================================================
+\usepackage[ruled, linesnumbered, vlined]{algorithm2e}
+\usepackage{epsfig, subfigure, amssymb, multirow, algorithmic, amsmath}
+\newcommand*{\superscript}[1]{\ensuremath{^{\rm #1}}}
+\newcommand*{\subscript}[1]{\ensuremath{_{\rm #1}}}
+\usepackage{amstext}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage[mathscr]{eucal}
+\usepackage{fancyhdr}
+\usepackage{supertabular}
+\usepackage{fancybox}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage{epic}
+\usepackage{float}
+\usepackage{appendix}
+\usepackage{hyperref}
+%=================================================
+% thesis details (preamble)
+%=================================================
+\title[{\sc Numerical Solutions for Burgers’ Equation } \hspace{0.8cm} \insertframenumber/\inserttotalframenumber]{{\sc Numerical Solutions for Burgers’ Equation in the Stochastic and Deterministic Version Using Spectral Methods }}
+\author[Presentacion de Examen de Grado --- {\sc Sep 18\superscript{th}, 2020}]{{Alan Daniel Matzumiya Zazueta}}
+\date{18 Sep 2020}
+\institute{Universidad de Sonora \\ Division de Ciencias Exactas y Naturales \\ Programa de Posgrado en Matematicas}
+%=================================================
+% start presentation
+%=================================================
+\begin{document}
+%========================
+% title page
+%========================
+\begin{frame}
+  \begin{center}
+    \includegraphics[scale=0.13]{files/logo.png}
+  \end{center}
+  \titlepage
+\end{frame}
+%========================
+% your slides:
+%========================
+\input{files/chapters/0-Contenido}
+\input{files/chapters/1-Motivacion_Objetivos}
+\input{files/chapters/2-1-Burgers_Determinista_Galerkin}
+\input{files/chapters/2-2-Burgers_Determinista_Colocacion}
+\input{files/chapters/3-0-Fokker_Planck_Kolmogorov}
+\input{files/chapters/3-1-Burgers_Estocastica_Solucion}
+\input{files/chapters/4-Conclusiones}
+%========================
+% Driver
+%========================
+\input{files/chapters/Glosario}
+%=================================================
+% end presentation
+%=================================================
+\end{document}

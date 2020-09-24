@@ -1,0 +1,114 @@
+\label{Proyeccion}
+\begin{frame}{Operador Proyección \hspace{5cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+    \only<1->{
+    \begin{block}{Expansión de Fourier}
+    		\begin{equation*}  
+    		    F[u] \equiv \displaystyle \sum_{ |n| \leq \infty} \hat{u}_{n} e^{inx}.
+    		\end{equation*}
+    \end{block}
+    }
+    \only<2->{
+	\begin{block}{Coeficientes de Fourier}
+    	\begin{equation*}
+    	    \hat{u}_n = \frac{1}{2 \pi} \displaystyle \int_{0}^{2 \pi} u(x) e^{-inx} dx, \hspace{3mm}  k = 0, \pm 1, \pm 2, \dots, \hspace{2mm} u(x) \in L^2 [0, 2 \pi].
+    	\end{equation*}
+	\end{block}
+	}
+	\only<3->{
+    \begin{block}{Expansión Truncada: Proyección}
+    	\begin{equation*}
+    	u_N (x, t) = \displaystyle \sum_{ |n| \leq \frac{N}{2} } \hat{u}_n e^{inx} 
+    	\end{equation*}
+    \end{block}	
+    	}
+\end{frame}
+\label{Determinista}
+\begin{frame}{Ecuación de Burgers' Determinista \hspace{2cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Ecuación de Burgers'}
+    \begin{equation*}
+        \left \lbrace \begin{array}{ll}
+    	u_t + u u_x = \alpha u_{xx} & x \in \mathbb{R}, \hspace{2mm} t > 0, \hspace{2mm} \alpha \geq 0 \\
+    	u (x, 0) = u_0 (x)  & x \in \mathbb{R},
+    	\end{array}  \right .
+    \end{equation*}
+    \end{block}
+    }
+    \only<2->{
+    \begin{block}{Ecuación de Difusión}
+    \begin{equation*}
+        \left \lbrace \begin{array}{ll}
+    	\varphi_t - \alpha \varphi_{xx} = 0,  & x \in \mathbb{R}, \hspace{2mm} t > 0, \hspace{2mm} \alpha > 0, \\
+    	\varphi (x, 0) = \varphi_0 (x) = \displaystyle e^{- \int_{0}^{x} \frac{u_0 (y)}{2 \alpha} dy}, & x \in \mathbb{R}.
+    	\end{array}  \right .
+    \label{heat}
+    \end{equation*}
+    \end{block}
+    }
+    \only<3->{
+    \begin{block}{Solución Analítica: Transformación de Cole-Hopf}
+    \begin{equation*}
+        u (x, t) = -2 \alpha \frac{\varphi_x}{\varphi} =  \displaystyle \frac{\int_{-\infty}^{\infty} \frac{x - \xi}{t} \varphi_0 (\xi) e^{- \frac{(x - \xi)^2}{4 \alpha t}} d\xi}{\int_{-\infty}^{\infty} \varphi_0 (\xi) e^{- \frac{(x - \xi)^2}{4 \alpha t}} d\xi} 
+    \end{equation*}
+    \end{block}
+    }
+\end{frame}    
+
+\label{Galerkin}
+\begin{frame}{Método de Fourier-Galerkin \hspace{4cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+    \only<1->{	
+    \begin{block}{Fourier-Galerkin}
+		\begin{align*}
+    	\left \langle \frac{\partial u_N}{\partial t} - \alpha \frac{\partial^2 u_N}{\partial x^2} + \frac{1}{2} (u_N^2)_x, e^{inx} \right\rangle = 0, \hspace{2mm} \forall \hspace{2mm} |n| \leq N, \hspace{2mm} \forall t > 0 \\
+    	\left \langle \frac{\partial \varphi_N}{\partial t} - \alpha \frac{\partial^2 \varphi_N}{\partial x^2}, e^{inx} \right\rangle = 0, \hspace{2mm} \forall \hspace{2mm} |n| \leq N, \hspace{2mm} \forall t > 0
+		\end{align*}
+	\end{block}
+	}
+	\only<2->{
+	\begin{block}{Sistema de EDOs}
+	\begin{align*}
+	    \frac{d \hat{u}_n (t)}{dt} &= \alpha p^2 n^2 \hat{u}_n (t) - p \widehat{G}_n (t) , \hspace{0.3cm} \forall |n| \leq \frac{N}{2} \\
+    	u_N(0) &= \mathcal{P}_N u_0 (x) \\ 
+	    \frac{d \hat{\varphi}_n (t)}{dt} &= - \alpha P^2 n^2 \hat{\varphi}_n (t), \hspace{2mm} |n| \leq N \\
+    	\varphi_N (0) &= \mathcal{P}_N \varphi_0 (x)
+	\end{align*}
+	\end{block}
+	}
+\end{frame}
+
+\label{Solucion-Galerkin}
+\begin{frame}{Solucion Numerica: Fourier-Galerkin \hspace{2cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Solucion Numerica: Discretizaci\'on Semi-Impl\'icita}
+	Para $\Delta t \in \mathbb{R}$ y $M \in \mathbb{N}$ fijos,  $t_j = j \Delta t, \hspace{2mm} j = 0, 1, \dots, M$ definimos:
+	\begin{align*}
+	\hat{u}_n (t_{j+1}) = \hat{u}_n (t_j) &+ \Delta t \alpha p^2 n^2 \hat{u}_n (t_j)	\\
+	&- in p \Delta t \displaystyle \left( \sum_{|k| \leq \frac {N}{2}} \hat{u}_n (t_{j+1}) \hat{u}_{n - k} (t_{j+1}) \right)
+	\end{align*}
+	\end{block}
+	}
+	\only<2->{
+	\begin{block}{Solucion Analitica Aproximada}
+	\begin{equation*}
+		u_N (x, t)  = - 2 \alpha \frac{\partial_x \varphi_N (x, t)}{ \varphi_N (x, t)} = - 2 \alpha \frac{\displaystyle \sum_{ |n| \leq N} in \hat{\varphi}_n (0) e^{- \lambda_n t}  \phi_n (x) }{\displaystyle \sum_{|n| \leq N} \hat{\varphi}_n (0) e^{- \lambda_n t}  \phi_n (x)}
+	\end{equation*}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}{Simulaciones: Fourier-Galerkin \hspace{2.5cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{	
+	Para los siguientes resultados numericos se considero lo siguiente	
+	\begin{equation*}
+		u_0 (x) = e^{-0.05 x^2}, \hspace{3mm} x \in [-60, 60], \hspace{2mm} t \in [0, 100]. 
+	\end{equation*}
+	}
+\end{frame}
+
+\label{Cero-Viscosidad}
+\begin{frame}{Ecuacion de Burgers': Sin Viscosidad \hspace{1cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\begin{align*}
+		u(x, t) &= u_0 (x_0), \hspace{2mm} x_0 = x - u_0 (x_0) t, \hspace{2mm} t \in [0, T_c], \\
+		u_0 (x) &= e^{-0.005 x^2}, \hspace{3mm} x \in [-60, 60], Tc = \min_{x \in \mathbb{R}} \left[  \frac{-1}{u'_0 (x)} \right], 
+	\end{align*}
+\end{frame}

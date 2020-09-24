@@ -1,0 +1,95 @@
+\label{Estocastica}
+\begin{frame}{Ecuacion de Burgers' Estocastica \hspace{1cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+\only<1->{
+	\begin{block}{Ecuacion de Burgers' Estocastica}
+	\begin{equation*}
+		d X(\xi, t) = \left[\alpha \partial_{\xi}^2 X(\xi, t) + \frac{1}{2} \partial_\xi \left(X^2 (\xi, t)\right) \right] dt + dW_t (\xi, t), \hspace{0.2cm} \xi \in [0, 1] 
+	\end{equation*}
+	\begin{align*}
+		X(0, t) &= X(1, t) = 0 , \hspace{2mm} t > 0, \\
+		X(\xi, 0) &= x(\xi), \hspace{2mm}  x \in \mathcal{H},
+	\end{align*}
+	\end{block}
+	}
+	\only<2->{
+	\begin{block}{Conjunto de Indices}
+	\begin{equation*}
+		J^{M, N} = \{\gamma = (\gamma_i, \hspace{1mm} 1 \leq i \leq M  ) \hspace{1mm} | \hspace{1mm} \gamma_i \in \{0, 1, \cdots, N \} \}
+	\end{equation*}
+	\end{block}
+	}
+	\only<3->{
+	\begin{block}{Expansion Truncada}
+	\begin{equation*}
+		\hat{u}_N (x, t) = \displaystyle \sum_{ n \in J^{M, N} } u_n (t) H_n (x), \hspace{2mm} x \in \mathcal{H}, \hspace{2mm}, t \in [0, T].
+	\end{equation*}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}{Ecuacion de Burgers' Estocastica \hspace{1cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+    \only<1->{
+	\begin{block}{Sistema de ODEs}
+	\begin{equation*}
+		\dot{u}_{m} (t) = -u_{m} (t) \lambda_{m} + \displaystyle \sum _{n \in S_N} u_{n} (t) \bar{C}_{n, m} , \hspace{0.1cm} n, m \in S_N
+	\end{equation*}
+	\end{block}    
+	}
+	\begin{block}{Forma Vectorial}
+	\begin{equation*}
+		U^M (t) =
+		\begin{pmatrix}
+		u_{m_1} (t) & u_{m_2} (t) & \dots & u_{m_M} (t)
+		\end{pmatrix}^T   
+	\end{equation*}
+	\begin{equation*}
+		\dot{U}^M (t) =
+		\begin{pmatrix}
+		\dot{u}_{m_1} (t) & \dot{u}_{m_2} (t) & \dots & \dot{u}_{m_M} (t)
+		\end{pmatrix}^T   
+	\end{equation*}
+	\end{block}
+	\begin{block}{Representacion matricial del sistema}
+    	\begin{equation*}
+    		\dot{U}^M (t) = \left[ I_{\lambda} - \bar{C} \right] U^M (t) = AU^M (t) \Longrightarrow U^M (t) = \displaystyle \sum _{j = 1}^{M} c_i V_i e^{\eta_i t}
+    	\end{equation*}
+    	\end{block}
+\end{frame}	
+
+\begin{frame}{Ecuacion de Burgers' Estocastica \hspace{1cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Eigenvectores y Eigenvalores: $V :=$ "Matriz" , $\eta :=$ "Vector"}
+	\begin{align*}
+		V &= a + i b = [ V_1, V_2, \dots, V_{M-1}, V_M ] \\
+		\eta &= \beta + i \mu  = [  \eta_1, \eta_2, \dots, \eta_{M-1}, \eta_M  ]
+	\end{align*}
+	\end{block}
+	}
+	\only<2->{
+	\begin{block}{Solucion Completa del Sistema}
+	    \begin{align*}
+	        U^M (t) = \displaystyle \sum_{j = 1}^{M} c_i V_i e^{\eta_i t} = \sum_{j = 1}^{M} V^{-1} U^T_M (0) V_i e^{\eta_i t}
+	    \end{align*}
+	\end{block}
+	}
+\end{frame}
+
+\label{Simulacion}
+\begin{frame}{Ecuacion de Burgers' Estocastica \hspace{1cm} \hyperlink{Navegador}{\beamergotobutton{Navegador}}}
+	\only<1->{
+	\begin{block}{Condicion Inicial, y su Aproximacion.}
+	\begin{align*}
+		x(\xi) = \sin(\pi \xi), \hspace{3mm} y(\xi) = \displaystyle \sum^{q}_{k=0} c_k T_k (\xi), 
+	\end{align*}
+	\end{block}
+	}
+	\only<2->{
+	\begin{itemize}
+	    \item Discretizacion en Espacio: \\
+	        $p = 2048$, $\Delta \xi = \frac{1}{p}$, $\xi_i = i \Delta \xi$, $i = 0, \dots, p$
+	    \item Discretizacion en Tiempo: \\
+	        $T=10$, $L = 1024$, $\Delta t = \frac{T}{L}$, $t_j = j \Delta t$, $j = 0, \dots, L$
+	   \item Parametros: \\ $\alpha = 0.01$, $N = 5$, $M = 11$, $q=3$.
+	\end{itemize}
+	}
+\end{frame}	
