@@ -2,24 +2,29 @@
     
     Now, we will proceed to describe the steps necessary to implement the method based on the above:
     \begin{enumerate}
-    	\item Set the intervals to consider, $[0, 1]$ for physical space and $[0, t_f]$ for time with $t_f$ fixed, and give the functional $u_0$ that interacting with the initial condition $x(\xi)$ . It is also necessary to choose the values of $N, M, N_1$, and another for the parameter $\alpha$. 
+    	\item We are going to consider the interval given by $[0, 1]$, which represents the domain of physical space, and similarly, the time will be set by the real value $t_f>0$ such that $[0, t_f]$. So, as a first step, we must define the problem well by choosing the parameters identified and required by the problem \ref{infinite_system}, which in the same way will be denoted by: $N$, $M$, $N_1 \in \mathbb{N}$, and $\alpha \in \mathbb{R}^+$.
     	
-    	\item We proceed to calculate the points $\xi_i \in [0, 1]$ for $i = 0, 1, \dots, p$ with $p$ positive entire as
+    	\item Given the above information, it is possible to follow the same methodology that we have analyzed in \ref{finite_system}, and define as a second step the calculation of the set $J^{M, N}$ given by \ref{Conjunto_J}, and then, as an intermediate step, obtain the set of points for each domain that we have defined above. 
+    	
+    	As an observation, the choice of the set of points, in this case, is arbitrary, and for example, We could obtain them by calculating the points $\xi_i \in [0, 1]$ defined for each $i = 0, 1, \dots, p \in \mathbb{N}^+$ as
     	\begin{align*}
     		\xi_i = \xi_0 + i \Delta \xi, \hspace{2mm} i = 0, 1, \dots, p
     	\end{align*}
-    	and to obtain the points $t_j \in [t_0, t_f]$, we define the sequence $j = 0, 1, \dots, T$, for some positive entire $T$, and calculate the following
+    	and similarly for $t_j \in [t_0, t_f]$ with $j = 0, 1, \dots, l \in \mathbb{N}^+$ to obtain the following
     	\begin{align*}
-    		t_j = t_0 + j \Delta t, \hspace{2mm} \Delta t = \frac{t_f}{T} 
+    		t_j = t_0 + j \Delta t, \hspace{2mm} \Delta t = \frac{t_f - t_0}{l} 
     	\end{align*}
     	
-    	\item Calculate the values of $\mathcal{J}^{N, M}$ to obtain the matrix $\bar{C}_{n, m}$. Setting the values $\lambda_i$ to proceed with the calculation of the eigenvalues $\eta_i$ and their respective eigenvectors $V_i$ of the matrix $A$.
+    	\item Concluding with the previous steps will allow us to obtain everything that is required to begin to construct the initial value problem of the system \ref{finite_system_vectorial}, which could be considered as the step that requires more attention because we must obtain the matrix $\bar{C}_{n, m}$ using the simplification given in \ref{Cnm}. 
     	
-    	\item Using the functional $u_0$ to calculate the constants $c_k$ for each $k = 1, \dots, M$, and then obtain the system solution given by (\ref{solution_finite_system}).
+    	However, this calculation gives the impression that it will give us a lot of work, but when observing its expression we can notice that we only have to focus on each of the combinations given by the multiplication of the Hermite polynomials that we must then integrate, for example, using some quadrature rule, and finally make its summation.
     	
-    	\item Finally, the approximation obtained is evaluated using the equation given by
+    	\item Successfully achieving this last step, what remains are to solve an eigenvalue problem given by \ref{eigen}, which is solved by some conventional numerical method to obtain the eigenvalues $\eta_i$ with their respective eigenvectors $V_i$. 
+    	
+    	Then, Using the functional $u_0$ as in \ref{IC_approx} to calculate the constants $c_k$ for each $k = 1, \dots, M$, and by using the expansion given by \ref{solution_finite_system} to obtain the solution of the problem as follows
+
     	\begin{align*}
-    		u_M(x, t) = \displaystyle \sum_{k=1}^{M} u_k (t) H_k (x).
+    		u^M(x_i, t_j) = \displaystyle \sum_{k=1}^{M} u_k (t_j) H_k (x_i), \hspace{2mm} \left\{x_i\right\}_{i=0}^{p} \in \left[ 0, 1 \right], \left\{t_j\right\}_{j=0}^{l} \in \left[ 0, t_f \right]
     	\end{align*}
     \end{enumerate}
     

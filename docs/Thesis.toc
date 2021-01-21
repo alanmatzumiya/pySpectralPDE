@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Numerical Solutions for Burgers' Equation with Viscosity}{39}{subsection.3.2.1}%
 \contentsline {subsubsection}{Simulations for Fourier-Galerkin Method}{39}{section*.9}%
 \contentsline {subsubsection}{Simulations for Fourier-Collocation Method}{48}{section*.15}%
-\contentsline {subsection}{\numberline {3.2.2}Numerical Solutions for Burgers' Equation without Viscosity}{55}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Numerical Solutions for Burgers' Equation without Viscosity}{54}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {4}Numerical Solutions for Burgers' equation in the Stochastic Version}{61}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Spectral Approximation for Fokker-Plank-Kolmogorov Equation}{61}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Numerical Solution for Burgers' Equation}{64}{section.4.2}%

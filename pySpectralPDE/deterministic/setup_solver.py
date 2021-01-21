@@ -1,32 +1,41 @@
-from numpy import pi, linspace, array, sin, round, arange
-from .solvers import schemes
+from numpy import pi, linspace, array, round, arange, zeros, fft, real, dot
+from .solvers import integrator
 from .helpers import eval_aprox
 from .grapher import graph_defaults
-from .solvers import *
 from .tools import *
 
-class spectral_solver(object):
 
-    def __init__(self, u0, params, equation="diffusion", scheme='galerkin', integrator_method='explicit'):
+class setup_solver:
 
-        self.N = N
-        h = 2.0 * pi / N
-        p = 2 * pi / (xR - xL)
-        self.x = array(arange(- self.N / 2, self.N / 2), dtype=float) * h / p + xL
-        self.t = linspace(t0, tmax, int(round(tmax / dt)) + 1, dtype=float)
+    def __init__(self, u0, params, scheme='collocation', integrator_method='explicit'):
 
-        self.params = dict(nu=nu, N=N, xL=xL, xR=xR,
-                           dt=dt, t0=t0, tmax=tmax,
-                           p=p, x=self.x, tdata=self.t)
-        self.data = schemes(self.params, u0, scheme, integrator_method).data
+        params['h'] = 2.0 * pi / params['N']
+        params['p'] = 2.0 * pi / (params['xR'] - params['xL'])
+
+        x = array(arange(- params['N'] / 2, params['N'] / 2, 1), dtype=float)
+        params['x'] = x * params['h'] / params['p']
+
+        operator_diff = differentation(params['N'])
+        ik = lambda v: v * real(fft.ifft(params['p'] * operator_diff.ik * fft.fft(v)))
+        k2 = lambda v: real(fft.ifft(params['nu'] * (operator_diff.ik * params['p']) ** 2 * fft.fft(v)))
+        diff1 = lambda v: params['p'] * v * dot(operator_diff.diff1, v)
+        diff2 = lambda v: params['nu'] * dot(operator_diff.diff2, v) * params['p'] ** 2
+
+        discrete_form = {"galerkin": lambda v: - ik(v) + k2(v),
+                         "collocation": lambda v: - diff1(v) + diff2(v)}
+
+        time_integrator = integrator()
+        method = {"explicit": time_integrator.explicit, "implicit": time_integrator.implicit}
+
+        params['t'], params['data'] = method[integrator_method](discrete_form[scheme],
+                                                   data_PVI=[params['x'], u0(params['x']), params['t0'], params['tmax'], params['dt']]
+                                                   )
+        self.params = params
+        self.views = graph_defaults()
         self.scheme = scheme
-        self.integrator_method = integrator_method
-        self.plot = graph_defaults()
 
-    def __call__(self, space, time):
+    def __call__(self, x, tdata):
 
-        vt = self.data[self.t.index(time)]
-        if self.scheme == 'galerkin':
-            return eval_aprox().continuous_expansion(space, vt, self.N)
-        else:
-            return eval_aprox().discrete_expansion(space, vt, self.N)
+        fourier = eval_aprox()
+        expansion_evaluator = {'galerkin': fourier.continuous_expansion, 'collocation': fourier.discrete_expansion}
+        return expansion_evaluator[self.scheme](x, tdata, self.params['N'])

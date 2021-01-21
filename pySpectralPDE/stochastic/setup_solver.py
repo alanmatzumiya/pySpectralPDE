@@ -3,7 +3,7 @@ from .solvers import set_simulation
 from .grapher import graph_defaults
 
 
-class FPK_solver(object):
+class setup_solver:
     """
     Solves the Burgers Stochastic equation on 1D using Spectral method
     based on the spectral decomposition of the Ornstein-Uhlenbeck semigroup
@@ -24,7 +24,7 @@ class FPK_solver(object):
 
     """
 
-    def __init__(self, u0, params, equation=""):
+    def __init__(self, u0, params, equation="burgers"):
 
         self.get_data = set_simulation(u0, params, JNM).SimulaTX()
         self.u0_approx = Cheby.fit(u0, 0, 1, 3)

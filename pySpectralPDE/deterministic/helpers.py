@@ -170,7 +170,7 @@ class eval_aprox:
 
     @staticmethod
     def continuous_expansion(x, v_hat, N):
-        k = arange(-int(N/2), int(N/2) + 1, 1)
+        k = arange(-int(N/2), int(N/2), 1)
         data = zeros(len(x))
         for i in range(0, len(array(x))):
             data[i] = sum(v_hat * exp(1j * k * x[i])).real / N
@@ -178,7 +178,7 @@ class eval_aprox:
 
     @staticmethod
     def discrete_expansion(x, v, N):
-        k = arange(-int(N / 2), int(N / 2) + 1, 1)
+        k = arange(-int(N / 2), int(N / 2), 1)
         h = 2.0 * pi / N
         data = zeros(len(x))
         for i in range(len(array(x))):

@@ -4,7 +4,7 @@ pySpectralPDE: Solver for Partial Differential Equations (PDEs) in its determini
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-`PySpectral` is a Python package for solving the partial differential equations (PDEs) using spectral methods such as
+`pySpectralPDE` is a Python package for solving the partial differential equations (PDEs) using spectral methods such as
 Galerkin and Collocation schemes. This package using different integrator methods to solving in time, for example euler
 in its explicit and implicit version, also contains plot tools to built 3D or 2D graphics about solutions.
 
@@ -31,10 +31,16 @@ Usage
 A simple example showing the evolution of the deterministic equation in 1d:
 
 ```python
-from pySpectralPDE.deterministic import spectral_solver
+from pySpectralPDE import spectralPDE
+import numpy as np
 
-result = deterministic_solver()         # solve the pde
-result.plot.graph_3d()                  # plot datas
+
+def u0(z):
+    return np.exp(- 5.0 ** (-3) * z ** 2)
+
+params = dict(nu=1.0, N=32, xL=-60.0, xR=60.0, dt=0.01, t0=0.0, tmax=100.0)     # setting params
+solver = spectralPDE.setup_solver(u0, params)        				# solve the pde
+solver.views.plot.graph_3d()                 		     			# plot datas
 ```
 which can be solved for different values of `Diffusion coefficient` in the example above.
 
@@ -42,10 +48,22 @@ This PDE can also be solved in its stochastic version with random forces.
 For instance, the [stochastic Burgers' equation](https://en.wikipedia.org/wiki/Burgers'_equation)
 can be implemented as
 ```python
-from pySpectralPDE.stochastic import FPK_solver
+from pySpectralPDE import spectralSPDE
+import numpy as np
 
-result = stochastic_solver()          # solve the pde
-result.plot.graph_3d()                # plot datas
+def u0(x):
+    return np.sin(np.pi * x)
+
+   
+t = np.linspace(0, 10, 512)
+x = np.linspace(0, 1, 256)    
+params = {"nu": 0.1, "N": int(5), "M": int(11), "x": x, "t": t}	   # setting params
+
+sol = spectralSPDE.setup_solver(u0=u0, params=params)		   # solve the pde
+sol.get_data                                                    
+sol.plot                                                           # plot datas
+sol.u0_approx
+sol.stability
 ```
 
 More information

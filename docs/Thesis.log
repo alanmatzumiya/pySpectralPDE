@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.31)  16 SEP 2020 00:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.6)  21 JAN 2021 04:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Thesis.tex
 (./Thesis.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (./tesismatpdf.cls
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-07-17> (./tesismatpdf.cls
 
 LaTeX Warning: You have requested document class `tesismatpdf',
                but the document class provides `tesismat'.
@@ -14,22 +14,22 @@ Document Class: tesismat 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@figure=\count175
+\c@table=\count176
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 ) (./utils/preamble.tex
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks14
+\@emptytoks=\toks15
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -46,7 +46,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks16
 \ex@=\dimen135
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -56,13 +56,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count176
+\inf@bad=\count177
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count177
-\leftroot@=\count178
+\uproot@=\count178
+\leftroot@=\count179
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count179
-\DOTSCASE@=\count180
+\classnum@=\count180
+\DOTSCASE@=\count181
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -71,65 +71,65 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen137
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count181
-\c@MaxMatrixCols=\count182
+\macc@depth=\count182
+\c@MaxMatrixCols=\count183
 \dotsspace@=\muskip16
-\c@parentequation=\count183
-\dspbrk@lvl=\count184
-\tag@help=\toks16
-\row@=\count185
-\column@=\count186
-\maxfields@=\count187
-\andhelp@=\toks17
+\c@parentequation=\count184
+\dspbrk@lvl=\count185
+\tag@help=\toks17
+\row@=\count186
+\column@=\count187
+\maxfields@=\count188
+\andhelp@=\toks18
 \eqnshift@=\dimen138
 \alignsep@=\dimen139
 \tagshift@=\dimen140
 \tagwidth@=\dimen141
 \totwidth@=\dimen142
 \lineht@=\dimen143
-\@envbody=\toks18
+\@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
-\athelp@=\toks20
+\athelp@=\toks21
 \minaw@=\dimen144
 \bigaw@=\dimen145
 \minCDarrowwidth=\dimen146
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks21
-\thm@bodyfont=\toks22
-\thm@headfont=\toks23
-\thm@notefont=\toks24
-\thm@headpunct=\toks25
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
 \thm@preskip=\skip52
 \thm@postskip=\skip53
 \thm@headsep=\skip54
-\dth@everypar=\toks26
+\dth@everypar=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count188
-\c@@ppsavesec=\count189
-\c@@ppsaveapp=\count190
+\c@@pps=\count189
+\c@@ppsavesec=\count190
+\c@@ppsaveapp=\count191
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks27
+\@enLab=\toks28
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip55
-\multirow@cntb=\count191
+\multirow@cntb=\count192
 \multirow@dima=\skip56
 \bigstrutjot=\dimen147
 )
@@ -153,7 +153,7 @@ s
 )
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count192
+\c@tracingst=\count193
 \ST@wd=\dimen148
 \ST@rightskip=\skip66
 \ST@leftskip=\skip67
@@ -176,10 +176,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box48
 \shadowsize=\dimen158
 \@Sbox=\box49
-\do@VerbBox=\toks28
-\the@fancyput=\toks29
-\this@fancyput=\toks30
-\EndVerbatimTokens=\toks31
+\do@VerbBox=\toks29
+\the@fancyput=\toks30
+\this@fancyput=\toks31
+\EndVerbatimTokens=\toks32
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
@@ -187,7 +187,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen159
 \ar@mcellbox=\box50
 \extrarowheight=\dimen160
-\NC@list=\toks32
+\NC@list=\toks33
 \extratabsurround=\skip69
 \backup@length=\skip70
 \ar@cellbox=\box51
@@ -204,21 +204,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen168
 \cmidrulekern=\dimen169
 \defaultaddspace=\dimen170
-\@cmidla=\count193
-\@cmidlb=\count194
+\@cmidla=\count194
+\@cmidlb=\count195
 \@aboverulesep=\dimen171
 \@belowrulesep=\dimen172
-\@thisruleclass=\count195
-\@lastruleclass=\count196
+\@thisruleclass=\count196
+\@lastruleclass=\count197
 \@thisrulewidth=\dimen173
 )
 (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks33
-\SOUL@lasttoken=\toks34
-\SOUL@cmds=\toks35
-\SOUL@buffer=\toks36
-\SOUL@token=\toks37
+\SOUL@word=\toks34
+\SOUL@lasttoken=\toks35
+\SOUL@cmds=\toks36
+\SOUL@buffer=\toks37
+\SOUL@token=\toks38
 \SOUL@spaceskip=\skip71
 \SOUL@ttwidth=\dimen174
 \SOUL@uldp=\dimen175
@@ -229,17 +229,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks38
+\KV@toks@=\toks39
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count197
-\Gm@cntv=\count198
-\c@Gm@tempcnt=\count199
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
 \Gm@bindingoffset=\dimen177
 \Gm@wd@mp=\dimen178
 \Gm@odd@mp=\dimen179
@@ -248,11 +248,11 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layoutheight=\dimen182
 \Gm@layouthoffset=\dimen183
 \Gm@layoutvoffset=\dimen184
-\Gm@dimlist=\toks39
+\Gm@dimlist=\toks40
 )
 (/usr/share/texlive/texmf-dist/tex/latex/truncate/truncate.sty
 Package: truncate 2001/08/20  ver 3.6
-\@Trunc@RestHyph=\toks40
+\@Trunc@RestHyph=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -276,38 +276,38 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count266
-\d@lta=\count267
+\@@multicnt=\count267
+\d@lta=\count268
 \@delta=\dimen187
 \@@delta=\dimen188
-\@gridcnt=\count268
-\@joinkind=\count269
+\@gridcnt=\count269
+\@joinkind=\count270
 \@dotgap=\dimen189
 \@ddotgap=\dimen190
-\@x@diff=\count270
-\@y@diff=\count271
+\@x@diff=\count271
+\@y@diff=\count272
 \x@diff=\dimen191
 \y@diff=\dimen192
 \@dotbox=\box52
-\num@segments=\count272
-\num@segmentsi=\count273
+\num@segments=\count273
+\num@segmentsi=\count274
 \@datafile=\read3
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count274
-\float@exts=\toks41
+\c@float@type=\count275
+\float@exts=\toks42
 \float@box=\box53
-\@float@everytoks=\toks42
+\@float@everytoks=\toks43
 \@floatcapt=\box54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen193
 \captionmargin@=\dimen194
@@ -318,23 +318,40 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen199
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count275
-\c@continuedfloat=\count276
+\c@caption@flags=\count276
+\c@continuedfloat=\count277
 Package caption Info: float package is loaded.
 Package caption Info: supertabular package is loaded.
 )
-\c@subfigure=\count277
-\c@subtable=\count278
+\c@subfigure=\count278
+\c@subtable=\count279
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks43
-\inpenc@posthook=\toks44
+\inpenc@prehook=\toks44
+\inpenc@posthook=\toks45
 )
-\c@example=\count279
-\c@teor=\count280
-\c@lemma=\count281
-\c@definition=\count282
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/06/20 v0.3e Improved picture commands (HjG,RN,JT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 110.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 112.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks46
+\@arclen=\dimen256
+\@arcrad=\dimen257
+\@tempdimd=\dimen258
+)
+\c@example=\count280
+\c@teor=\count281
+\c@lemma=\count282
+\c@definition=\count283
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
@@ -345,13 +362,13 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -382,12 +399,12 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen256
-\Hy@linkcounter=\count283
-\Hy@pagecounter=\count284
+\@linkdim=\dimen259
+\Hy@linkcounter=\count284
+\Hy@pagecounter=\count285
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -397,23 +414,22 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count285
-\pdfmajorversion=\count286
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
+\Hy@SavedSpaceFactor=\count286
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
+Package hyperref Info: Bookmarks ON on input line 4717.
 \c@Hy@tempcnt=\count287
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen257
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen260
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -423,17 +439,17 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count288
-\Field@Width=\dimen258
-\Fld@charsize=\dimen259
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring OFF on input line 6450.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
+\Field@Width=\dimen261
+\Fld@charsize=\dimen262
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
 
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
@@ -445,7 +461,7 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
@@ -465,14 +481,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip72
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count294
 \l__pdf_internal_box=\box55
 )
-(./Thesis.aux (./introduction/Introduction.aux)
+(./Thesis.aux (./agradecimientos.aux) (./introduction/Introduction.aux)
 (./preliminaries/Fundamental_Theory.aux)
 (./burgers_equation/deterministic/Deterministic.aux)
 (./burgers_equation/stochastic/Stochastic.aux) (./conclusions/Conclusions.aux)
@@ -533,16 +549,16 @@ LaTeX Font Info:    ... okay on input line 23.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
-\scratchdimen=\dimen260
+\scratchdimen=\dimen263
 \scratchbox=\box56
 \nofMPsegments=\count296
 \nofMParguments=\count297
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count298
-\MPscratchDim=\dimen261
+\MPscratchDim=\dimen264
 \MPnumerator=\count299
 \makeMPintoPDFobject=\count300
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -616,13 +632,36 @@ Overfull \hbox (62.11246pt too wide) in paragraph at lines 27--27
 
 ] [3] [4
 
-] (./Thesis.toc [5
+]
+\openout2 = `agradecimientos.aux'.
 
-])
+ (./agradecimientos.tex
+<mandelbrot.png, id=152, 1204.5pt x 1204.5pt>
+File: mandelbrot.png Graphic file (type png)
+<use mandelbrot.png>
+Package pdftex.def Info: mandelbrot.png  used on input line 8.
+(pdftex.def)             Requested size: 60.22852pt x 60.22852pt.
+File: mandelbrot.png Graphic file (type png)
+<use mandelbrot.png>
+Package pdftex.def Info: mandelbrot.png  used on input line 8.
+(pdftex.def)             Requested size: 60.22852pt x 60.22852pt.
+) [5
+
+ <./mandelbrot.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[6
+
+
+] (./Thesis.toc [7])
 \tf@toc=\write5
 \openout5 = `Thesis.toc'.
 
- [6]
+ [8]
 \openout2 = `introduction/Introduction.aux'.
 
  (./introduction/Introduction.tex
@@ -661,6 +700,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
 [2] (./introduction/Burgers_Deterministic.tex
 Overfull \hbox (5.92982pt too wide) in paragraph at lines 3--4
 \OT1/cmr/m/n/10.95 Navier-Stokes equa-tions, named af-ter Claude-Louis Navier a
@@ -682,12 +726,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
@@ -702,18 +746,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 13.59999pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[4]
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
@@ -734,7 +772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--143
  []
 
 [6]
-<introduction/figures/Exact_Solution_alpha=001.png, id=313, 1084.05pt x 1084.05
+<introduction/figures/Exact_Solution_alpha=001.png, id=325, 1084.05pt x 1084.05
 pt>
 File: introduction/figures/Exact_Solution_alpha=001.png Graphic file (type png)
 
@@ -828,7 +866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-<preliminaries/figures/example21.png, id=410, 722.7pt x 361.35pt>
+<preliminaries/figures/example21.png, id=420, 722.7pt x 361.35pt>
 File: preliminaries/figures/example21.png Graphic file (type png)
 <use preliminaries/figures/example21.png>
 Package pdftex.def Info: preliminaries/figures/example21.png  used on input lin
@@ -838,7 +876,7 @@ e 110.
 Underfull \vbox (badness 3590) has occurred while \output is active []
 
  [15]
-<preliminaries/figures/example22.png, id=422, 722.7pt x 361.35pt>
+<preliminaries/figures/example22.png, id=432, 722.7pt x 361.35pt>
 File: preliminaries/figures/example22.png Graphic file (type png)
 <use preliminaries/figures/example22.png>
 Package pdftex.def Info: preliminaries/figures/example22.png  used on input lin
@@ -880,13 +918,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-<preliminaries/figures/example23.png, id=471, 722.7pt x 361.35pt>
+<preliminaries/figures/example23.png, id=481, 722.7pt x 361.35pt>
 File: preliminaries/figures/example23.png Graphic file (type png)
 <use preliminaries/figures/example23.png>
 Package pdftex.def Info: preliminaries/figures/example23.png  used on input lin
 e 98.
 (pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
-<preliminaries/figures/example24.png, id=474, 722.7pt x 361.35pt>
+<preliminaries/figures/example24.png, id=484, 722.7pt x 361.35pt>
 File: preliminaries/figures/example24.png Graphic file (type png)
 <use preliminaries/figures/example24.png>
 Package pdftex.def Info: preliminaries/figures/example24.png  used on input lin
@@ -1099,12 +1137,12 @@ Overfull \hbox (13.63506pt too wide) detected at line 82
 []
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[42]
+[41]
 
 ! Package inputenc Error: Unicode character ​ (U+200B)
 (inputenc)                not set up for use with LaTeX.
@@ -1113,7 +1151,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 ...a=1}, we can see the numerical values ​
+l.119 ...a=1}, we can see the numerical values ​
                                                   ​of these distances for ...
 
 You may provide a definition with
@@ -1127,57 +1165,47 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 ...}, we can see the numerical values ​​
+l.119 ...}, we can see the numerical values ​​
                                                   of these distances for dif...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/galerkin/a
-lphas_Error_N.png, id=668, 722.7pt x 361.35pt>
+lphas_Error_N.png, id=669, 722.7pt x 361.35pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/galer
 kin/alphas_Error_N.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/galerk
 in/alphas_Error_N.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
-iscid/figures/galerkin/alphas_Error_N.png  used on input line 129.
+iscid/figures/galerkin/alphas_Error_N.png  used on input line 123.
 (pdftex.def)             Requested size: 426.79134pt x 213.39867pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 129--130
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
-[43 <./burgers_equation/deterministic/numerical_experiments/viscid/figures/gale
-rkin/alphas_Error_N.png>]
+[42] [43 <./burgers_equation/deterministic/numerical_experiments/viscid/figures
+/galerkin/alphas_Error_N.png>]
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/galerkin/N
-umerical_Solution_alpha=1.png, id=683, 1084.05pt x 1084.05pt>
+umerical_Solution_alpha=1.png, id=693, 1084.05pt x 1084.05pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/galer
 kin/Numerical_Solution_alpha=1.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/galerk
 in/Numerical_Solution_alpha=1.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
-iscid/figures/galerkin/Numerical_Solution_alpha=1.png  used on input line 137.
+iscid/figures/galerkin/Numerical_Solution_alpha=1.png  used on input line 131.
 (pdftex.def)             Requested size: 341.43306pt x 341.42793pt.
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/galerkin/N
-umerical_Solution_alpha=1_T=100.png, id=688, 1084.05pt x 722.7pt>
+umerical_Solution_alpha=1_T=100.png, id=698, 1084.05pt x 722.7pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/galer
 kin/Numerical_Solution_alpha=1_T=100.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/galerk
 in/Numerical_Solution_alpha=1_T=100.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
 iscid/figures/galerkin/Numerical_Solution_alpha=1_T=100.png  used on input line
- 140.
+ 134.
 (pdftex.def)             Requested size: 355.65944pt x 237.10226pt.
-
-Overfull \hbox (26.23038pt too wide) in paragraph at lines 144--167
-[][] 
- []
-
-
-Overfull \hbox (55.14883pt too wide) in paragraph at lines 170--193
-[][] 
- []
-
 
 Overfull \vbox (27.96957pt too high) has occurred while \output is active []
 
@@ -1186,24 +1214,24 @@ Overfull \vbox (27.96957pt too high) has occurred while \output is active []
 rkin/Numerical_Solution_alpha=1.png> <./burgers_equation/deterministic/numerica
 l_experiments/viscid/figures/galerkin/Numerical_Solution_alpha=1_T=100.png>]
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/galerkin/N
-umerical_Solution_alpha=0005.png, id=700, 1084.05pt x 1084.05pt>
+umerical_Solution_alpha=0005.png, id=710, 1084.05pt x 1084.05pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/galer
 kin/Numerical_Solution_alpha=0005.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/galerk
 in/Numerical_Solution_alpha=0005.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
-iscid/figures/galerkin/Numerical_Solution_alpha=0005.png  used on input line 20
-0.
+iscid/figures/galerkin/Numerical_Solution_alpha=0005.png  used on input line 19
+2.
 (pdftex.def)             Requested size: 341.43306pt x 341.42793pt.
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/galerkin/N
-umerical_Solution_alpha=0005_T=100.png, id=705, 1084.05pt x 722.7pt>
+umerical_Solution_alpha=0005_T=100.png, id=715, 1084.05pt x 722.7pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/galer
 kin/Numerical_Solution_alpha=0005_T=100.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/galerk
 in/Numerical_Solution_alpha=0005_T=100.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
 iscid/figures/galerkin/Numerical_Solution_alpha=0005_T=100.png  used on input l
-ine 202.
+ine 194.
 (pdftex.def)             Requested size: 355.65944pt x 237.10226pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1215,17 +1243,7 @@ Overfull \vbox (27.96957pt too high) has occurred while \output is active []
 [46 <./burgers_equation/deterministic/numerical_experiments/viscid/figures/gale
 rkin/Numerical_Solution_alpha=0005.png> <./burgers_equation/deterministic/numer
 ical_experiments/viscid/figures/galerkin/Numerical_Solution_alpha=0005_T=100.pn
-g>]
-Overfull \hbox (26.23038pt too wide) in paragraph at lines 207--232
-[][] 
- []
-
-
-Overfull \hbox (53.62782pt too wide) in paragraph at lines 235--260
-[][] 
- []
-
-[47])
+g>] [47])
 (./burgers_equation/deterministic/numerical_experiments/viscid/Viscid_Collocati
 on.tex
 Underfull \hbox (badness 10000) in paragraph at lines 38--40
@@ -1272,7 +1290,7 @@ You may provide a definition with
 
 [49]
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/collocatio
-n/alphas_Error_N.png, id=746, 722.7pt x 361.35pt>
+n/alphas_Error_N.png, id=756, 722.7pt x 361.35pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/collo
 cation/alphas_Error_N.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/colloc
@@ -1283,7 +1301,7 @@ iscid/figures/collocation/alphas_Error_N.png  used on input line 68.
  [50 <./burgers_equation/deterministic/numerical_experiments/viscid/figures/col
 location/alphas_Error_N.png>]
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/collocatio
-n/Numerical_Solution_alpha=1.png, id=756, 1084.05pt x 1084.05pt>
+n/Numerical_Solution_alpha=1.png, id=766, 1084.05pt x 1084.05pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/collo
 cation/Numerical_Solution_alpha=1.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/colloc
@@ -1293,7 +1311,7 @@ iscid/figures/collocation/Numerical_Solution_alpha=1.png  used on input line 77
 .
 (pdftex.def)             Requested size: 341.43306pt x 341.42793pt.
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/collocatio
-n/Numerical_Solution_alpha=1_T=100.png, id=761, 1084.05pt x 722.7pt>
+n/Numerical_Solution_alpha=1_T=100.png, id=771, 1084.05pt x 722.7pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/collo
 cation/Numerical_Solution_alpha=1_T=100.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/colloc
@@ -1303,16 +1321,6 @@ iscid/figures/collocation/Numerical_Solution_alpha=1_T=100.png  used on input l
 ine 80.
 (pdftex.def)             Requested size: 355.65944pt x 237.10226pt.
 
-Overfull \hbox (26.23038pt too wide) in paragraph at lines 84--109
-[][] 
- []
-
-
-Overfull \hbox (55.14883pt too wide) in paragraph at lines 112--137
-[][] 
- []
-
-
 Overfull \vbox (27.96957pt too high) has occurred while \output is active []
 
 
@@ -1321,24 +1329,24 @@ ocation/Numerical_Solution_alpha=1.png> <./burgers_equation/deterministic/numer
 ical_experiments/viscid/figures/collocation/Numerical_Solution_alpha=1_T=100.pn
 g>]
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/collocatio
-n/Numerical_Solution_alpha=0005.png, id=773, 1084.05pt x 1084.05pt>
+n/Numerical_Solution_alpha=0005.png, id=783, 1084.05pt x 1084.05pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/collo
 cation/Numerical_Solution_alpha=0005.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/colloc
 ation/Numerical_Solution_alpha=0005.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
 iscid/figures/collocation/Numerical_Solution_alpha=0005.png  used on input line
- 145.
+ 141.
 (pdftex.def)             Requested size: 341.43306pt x 341.42793pt.
 <burgers_equation/deterministic/numerical_experiments/viscid/figures/collocatio
-n/Numerical_Solution_alpha=0005_T=100.png, id=778, 1084.05pt x 722.7pt>
+n/Numerical_Solution_alpha=0005_T=100.png, id=788, 1084.05pt x 722.7pt>
 File: burgers_equation/deterministic/numerical_experiments/viscid/figures/collo
 cation/Numerical_Solution_alpha=0005_T=100.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/viscid/figures/colloc
 ation/Numerical_Solution_alpha=0005_T=100.png>
 Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/v
 iscid/figures/collocation/Numerical_Solution_alpha=0005_T=100.png  used on inpu
-t line 148.
+t line 144.
 (pdftex.def)             Requested size: 355.65944pt x 237.10226pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1350,26 +1358,13 @@ Overfull \vbox (27.96957pt too high) has occurred while \output is active []
 [53 <./burgers_equation/deterministic/numerical_experiments/viscid/figures/coll
 ocation/Numerical_Solution_alpha=0005.png> <./burgers_equation/deterministic/nu
 merical_experiments/viscid/figures/collocation/Numerical_Solution_alpha=0005_T=
-100.png>]
-Overfull \hbox (26.23038pt too wide) in paragraph at lines 154--179
-[][] 
- []
-
-
-Overfull \hbox (53.62782pt too wide) in paragraph at lines 182--207
-[][] 
- []
-
-) (./burgers_equation/deterministic/numerical_experiments/inviscid/Inviscid.tex
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54]
+100.png>])
+(./burgers_equation/deterministic/numerical_experiments/inviscid/Inviscid.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
@@ -1399,7 +1394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-[56]
+
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
@@ -1437,7 +1432,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
@@ -1449,7 +1444,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
 [57]
 <burgers_equation/deterministic/numerical_experiments/inviscid/figures/small_al
-pha.png, id=826, 1107.8991pt x 776.9025pt>
+pha.png, id=837, 1107.8991pt x 776.9025pt>
 File: burgers_equation/deterministic/numerical_experiments/inviscid/figures/sma
 ll_alpha.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/inviscid/figures/smal
@@ -1458,7 +1453,7 @@ Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/i
 nviscid/figures/small_alpha.png  used on input line 96.
 (pdftex.def)             Requested size: 341.43306pt x 239.42659pt.
 <burgers_equation/deterministic/numerical_experiments/inviscid/figures/small_al
-pha_T.png, id=831, 1107.8991pt x 776.9025pt>
+pha_T.png, id=842, 1107.8991pt x 776.9025pt>
 File: burgers_equation/deterministic/numerical_experiments/inviscid/figures/sma
 ll_alpha_T.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/inviscid/figures/smal
@@ -1470,7 +1465,7 @@ nviscid/figures/small_alpha_T.png  used on input line 99.
 mall_alpha.png> <./burgers_equation/deterministic/numerical_experiments/invisci
 d/figures/small_alpha_T.png>]
 <burgers_equation/deterministic/numerical_experiments/inviscid/figures/Numerica
-l_Solution_Inviscid_T.png, id=844, 1084.05pt x 722.7pt>
+l_Solution_Inviscid_T.png, id=854, 1084.05pt x 722.7pt>
 File: burgers_equation/deterministic/numerical_experiments/inviscid/figures/Num
 erical_Solution_Inviscid_T.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/inviscid/figures/Nume
@@ -1479,7 +1474,7 @@ Package pdftex.def Info: burgers_equation/deterministic/numerical_experiments/i
 nviscid/figures/Numerical_Solution_Inviscid_T.png  used on input line 105.
 (pdftex.def)             Requested size: 369.88582pt x 246.58592pt.
 <burgers_equation/deterministic/numerical_experiments/inviscid/figures/Numerica
-l_Solution_Inviscid.png, id=849, 1084.05pt x 1084.05pt>
+l_Solution_Inviscid.png, id=859, 1084.05pt x 1084.05pt>
 File: burgers_equation/deterministic/numerical_experiments/inviscid/figures/Num
 erical_Solution_Inviscid.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/inviscid/figures/Nume
@@ -1495,7 +1490,7 @@ Overfull \vbox (22.6023pt too high) has occurred while \output is active []
 merical_Solution_Inviscid_T.png> <./burgers_equation/deterministic/numerical_ex
 periments/inviscid/figures/Numerical_Solution_Inviscid.png>]
 <burgers_equation/deterministic/numerical_experiments/inviscid/figures/varios_a
-lphas.png, id=865, 1107.8991pt x 776.9025pt>
+lphas.png, id=876, 1107.8991pt x 776.9025pt>
 File: burgers_equation/deterministic/numerical_experiments/inviscid/figures/var
 ios_alphas.png Graphic file (type png)
 <use burgers_equation/deterministic/numerical_experiments/inviscid/figures/vari
@@ -1596,56 +1591,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--111
 [66] [67])
 (./burgers_equation/stochastic/numerical_experiments/Numerical_Experiments.tex
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 [69]
-<burgers_equation/stochastic/numerical_experiments/figures/IC.png, id=997, 722.
-7pt x 722.7pt>
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[70]
+<burgers_equation/stochastic/numerical_experiments/figures/IC.png, id=1017, 722
+.7pt x 722.7pt>
 File: burgers_equation/stochastic/numerical_experiments/figures/IC.png Graphic 
 file (type png)
 <use burgers_equation/stochastic/numerical_experiments/figures/IC.png>
 Package pdftex.def Info: burgers_equation/stochastic/numerical_experiments/figu
-res/IC.png  used on input line 58.
+res/IC.png  used on input line 63.
 (pdftex.def)             Requested size: 219.08743pt x 219.08333pt.
 <burgers_equation/stochastic/numerical_experiments/figures/Numerical_Solution_S
-tochastic.png, id=1000, 1084.05pt x 1084.05pt>
+tochastic.png, id=1020, 1084.05pt x 1084.05pt>
 File: burgers_equation/stochastic/numerical_experiments/figures/Numerical_Solut
 ion_Stochastic.png Graphic file (type png)
 <use burgers_equation/stochastic/numerical_experiments/figures/Numerical_Soluti
 on_Stochastic.png>
 Package pdftex.def Info: burgers_equation/stochastic/numerical_experiments/figu
-res/Numerical_Solution_Stochastic.png  used on input line 61.
+res/Numerical_Solution_Stochastic.png  used on input line 66.
 (pdftex.def)             Requested size: 358.50227pt x 358.4985pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70 <./burgers_equation/stochastic/numerical_experiments/figures/IC.png> <./bu
+ [71 <./burgers_equation/stochastic/numerical_experiments/figures/IC.png> <./bu
 rgers_equation/stochastic/numerical_experiments/figures/Numerical_Solution_Stoc
 hastic.png>]
-<burgers_equation/stochastic/numerical_experiments/figures/norms.png, id=1009, 
+<burgers_equation/stochastic/numerical_experiments/figures/norms.png, id=1030, 
 722.7pt x 722.7pt>
 File: burgers_equation/stochastic/numerical_experiments/figures/norms.png Graph
 ic file (type png)
 <use burgers_equation/stochastic/numerical_experiments/figures/norms.png>
 Package pdftex.def Info: burgers_equation/stochastic/numerical_experiments/figu
-res/norms.png  used on input line 68.
+res/norms.png  used on input line 73.
 (pdftex.def)             Requested size: 278.83578pt x 278.83032pt.
-))) [71 <./burgers_equation/stochastic/numerical_experiments/figures/norms.png>
+))) [72 <./burgers_equation/stochastic/numerical_experiments/figures/norms.png>
 ]
 \openout2 = `conclusions/Conclusions.aux'.
 
- (./conclusions/Conclusions.tex [72
-
-
-
-]
+ (./conclusions/Conclusions.tex
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1672,7 +1663,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[73]) [74]
+[73
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+) [74]
 \openout2 = `appendix/Appendix.aux'.
 
  (./appendix/Appendix.tex
@@ -1735,19 +1735,27 @@ e-lated Top-ics.
  []
 
 
-! Package inputenc Error: Unicode character ̌ (U+030C)
-(inputenc)                not set up for use with LaTeX.
+LaTeX Warning: Command \v invalid in math mode on input line 12.
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...tem{Landau1987} Landau, Lev D., and Lifš
-                                                  ic Evgenij M. Fluid Dynami...
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.12 ...{Landau1987} Landau, Lev D., and Lif$\v{s}
+                                                  $ic Evgenij M. Fluid Dynam...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
+! You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.12 ...{Landau1987} Landau, Lev D., and Lif$\v{s}
+                                                  $ic Evgenij M. Fluid Dynam...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
+Missing character: There is no � in font cmex10!
 
 Underfull \hbox (badness 2460) in paragraph at lines 18--19
 []\OT1/cmr/m/n/10.95 Bateman, H. (1915) Some Re-cent Re-searches on the Mo-tion
@@ -1758,62 +1766,62 @@ Underfull \hbox (badness 2460) in paragraph at lines 18--19
 
 
 ]
-Underfull \hbox (badness 6204) in paragraph at lines 67--68
+Underfull \hbox (badness 6204) in paragraph at lines 65--66
 []\OT1/cmr/m/n/10.95 KATO, To-sio. Frac-tional pow-ers of dis-si-pa-tive op-er-
 a-tors. J. Math.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 \OT1/cmr/m/n/10.95 Soc. Japan 13 (1961), no. 3, 246--274. doi:10.2969/jmsj/0133
 0246.
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 73--74
+Underfull \hbox (badness 1852) in paragraph at lines 71--72
 \OT1/cmr/m/n/10.95 ser-va-tion laws. SIAM J. Nu-mer. Anal. 26, 1 (Febru-ary 198
 9), 30{44.
  []
 
 [82]
-Underfull \hbox (badness 1642) in paragraph at lines 77--78
+Underfull \hbox (badness 1642) in paragraph at lines 75--76
 []\OT1/cmr/m/n/10.95 Delgado Vences, Fran-cisco & Matzumiya-Zazueta, Alan & Sau
 l, Diaz-
  []
 
 
-Underfull \hbox (badness 6412) in paragraph at lines 77--78
+Underfull \hbox (badness 6412) in paragraph at lines 75--76
 \OT1/cmr/m/n/10.95 Infante. (2019). INI-TIAL CON-DI-TIONS CON-TI-NU-ITY OF A NU
 -
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 77--78
+Underfull \hbox (badness 3260) in paragraph at lines 75--76
 \OT1/cmr/m/n/10.95 MER-I-CAL AP-PROX-I-MA-TION FOR KOL-MOGOROV EQUA-TIONS *.
  []
 
 ) [83]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
- (./Thesis.aux (./introduction/Introduction.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+ (./Thesis.aux (./agradecimientos.aux) (./introduction/Introduction.aux)
 (./preliminaries/Fundamental_Theory.aux)
 (./burgers_equation/deterministic/Deterministic.aux)
 (./burgers_equation/stochastic/Stochastic.aux) (./conclusions/Conclusions.aux)
 (./appendix/Appendix.aux) (./bibliograph/bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 0BEEBDE97FFF3C348C341D75470050FD;2553.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 9979 strings out of 481239
- 160019 string characters out of 5920377
- 433277 words of memory out of 5000000
- 24603 multiletter control sequences out of 15000+600000
- 545470 words of font info for 72 fonts, out of 8000000 for 9000
+ 10208 strings out of 480906
+ 163866 string characters out of 5910772
+ 443783 words of memory out of 5000000
+ 25144 multiletter control sequences out of 15000+600000
+ 548579 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,17n,50p,981b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,17n,49p,981b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -1835,10 +1843,10 @@ public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Thesis.pdf (89 pages, 8523929 bytes).
+Output written on Thesis.pdf (91 pages, 8562439 bytes).
 PDF statistics:
- 1235 PDF objects out of 1440 (max. 8388607)
- 1026 compressed objects within 11 object streams
- 312 named destinations out of 1000 (max. 500000)
- 361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1253 PDF objects out of 1440 (max. 8388607)
+ 1040 compressed objects within 11 object streams
+ 313 named destinations out of 1000 (max. 500000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 

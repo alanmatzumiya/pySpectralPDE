@@ -86,12 +86,10 @@ class graph_defaults:
     def graph_3d(self, x, t, data, name='exact3d'):
 
         # Setting up Plot
-        tplot = 0.5
-        nplots = int(round(t[len(t) - 1] / tplot))
-        X, Y = np.meshgrid(x, t[::nplots])
+        X, Y = np.meshgrid(x, t)
         fig = plt.figure(figsize=(15, 15))
         ax = fig.gca(projection='3d')
-        surf = ax.plot_surface(X, Y, data[::nplots, :], cmap='Spectral_r', rstride=1, cstride=1)
+        surf = ax.plot_surface(X, Y, data, cmap='Spectral_r', rstride=1, cstride=1)
 
         ax.set_zlim(np.min(data), np.max(data))
         ax.set_xlabel(r'$x$', fontsize=25, labelpad=20)
@@ -104,6 +102,7 @@ class graph_defaults:
 
         plt.tight_layout()
         plt.savefig(name+'.png')
+
 
     def plot_diffusion(self, u_analytical, u, x, NT, TITLE):
         """

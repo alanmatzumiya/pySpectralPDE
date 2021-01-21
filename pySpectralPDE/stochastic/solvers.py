@@ -1,4 +1,3 @@
-from numba import jit
 from numpy import sin, pi, sqrt, exp, cos
 import numpy as np
 from math import factorial
@@ -10,7 +9,6 @@ class integrator:
 
     def __init__(self, u0, JNM, **params):
         self.u0 = u0
-        self.equation = params['equation']
         self.nu = params['nu']
         self.x = params['x']
         self.t = params['t']
@@ -18,7 +16,8 @@ class integrator:
 
         # Hermite polynomials evaluation
         rule1 = np.polynomial.hermite_e.hermegauss(deg=200)
-        self.rulesX = rule1[0][::-1], self.rulesW = rule1[1]
+        self.rulesX = rule1[0][::-1]
+        self.rulesW = rule1[1]
         self.LRules = len(self.rulesX)
         self.J = JNM().Js(self.N)
         self.M = len(self.J)
@@ -74,7 +73,7 @@ class integrator:
             Array containing the values of second type of integral
 
         """
-        @jit
+
         def f(Jm, Jn, r, i, J, M, LRules, rulesX, rulesW, nu, k):
             sum2 = 0
             Jn1 = J[:, r]
@@ -103,7 +102,7 @@ class integrator:
             return sum2 * prod
 
         def make(f):
-            @jit
+
             def integ(Jm, Jn, r, i, J, M, LRules, rulesX, rulesW, nu):
                 intg = np.zeros(M)
                 for k in range(0, M):
@@ -117,7 +116,7 @@ class integrator:
         return make(f)(Jm, Jn, r, i, self.J, self.M, self.LRules, self.rulesX, self.rulesW, self.nu)
 
 
-    @jit
+
     def integr3k(self):
         """
         Function to calculate third type of integrals.
@@ -132,16 +131,16 @@ class integrator:
             Array containing the values of third type of integral
 
         """
-        @jit
+
         def f(x, i):
             return sqrt(2.0) * sin(i * pi * x) * x
 
         int3 = np.zeros(self.M)
         def make(f):
-            @jit
+
             def integ(M):
                 for k in range(1, M + 1):
-                    int3[k - 1] = integrate.quad(f, 0, 1, args=[k])[0]
+                    int3[k - 1] = integrate.quad(f, 0, 1, args=k)[0]
                 return int3
             return integ
         return make(f)(self.M)
@@ -161,7 +160,7 @@ class integrator:
 
         """
 
-        @jit
+
         def h(x, j, k, l):
             return 2.0 * ((l + 1) * pi * sin((k + 1) * pi * x) * cos((l + 1) * pi * x)
                           + (k + 1) * pi * sin((l + 1) * pi * x) * cos((k + 1) * pi * x)) * sin((j + 1) * pi * x)
@@ -169,23 +168,19 @@ class integrator:
             return 2.0 * (sin((k + 1) * x) * sin((l + 1) * pi * x)) * sin((j + 1) * pi * x)
 
         int3 = self.integr3k()
-        def make(f):
-            @jit
-            def integ(M):
-                int4 = np.zeros(M)
-                for j in range(0, M):
-                    intM = np.zeros([M, M])
-                    for k in range(0, M):
-                        for l in range(0, M):
-                            integr = integrate.quad(f, 0, 1, args=[j, k, l])
-                            intM[l, k] = integr[0] * int3[l] * int3[k]
-                    int4[j] = sum(intM.sum(1))
-            return integ
+        
 
-        if self.equation == "burgers":
-            return make(h)(self.M)
-        else:
-            return int3 - make(w)(self.M)
+        int4 = np.zeros(self.M)
+        for j in range(0, self.M):
+            intM = np.zeros([self.M, self.M])
+            for k in range(0, self.M):
+                for l in range(0, self.M):
+                    integr = integrate.quad(h, 0, 1, args=(j, k, l))
+                    intM[l, k] = integr[0] * int3[l] * int3[k]
+            int4[j] = sum(intM.sum(1))
+        return int4
+        #else:
+        #    return int3 - make(w)(self.M)
 
     def u02(self):
         """
@@ -210,26 +205,21 @@ class integrator:
             Array containing the constants of the system of ordinary differential equations
 
         """
-        def make(f):
-            @jit
-            def constants(xSpace, M, J, rulesX, rulesW, nu):
-                Lx = len(xSpace)
-                ci = np.zeros([M, Lx])
+        Lx = len(self.x)
+        ci = np.zeros([self.M, Lx])
 
-                for z in range(0, Lx):
-                    for i in range(0, M):
-                        sum2 = 0
-                        for k in range(0, M):
-                            sum1 = 0
-                            if J[k, i] > 0:
-                                for y in range(0, self.LRules):
-                                    sum1 = sum1 + special.eval_hermitenorm(int(J[k, i]),
-                                                                           rulesX[y]) * rulesX[y] * rulesW[y]
-                            sum2 = sum2 + sum1 * f(xSpace[z]) * sqrt(2.0) / (sqrt(2.0 * nu) * pi * (k + 1))
-                        ci[i, z] = sum2
-                    return ci
-            return constants
-        return make(jit(self.u0))(self.x, self.M, self.J, self.rulesX, self.rulesW, self.nu)
+        for z in range(0, Lx):
+            for i in range(0, self.M):
+                sum2 = 0
+                for k in range(0, self.M):
+                    sum1 = 0
+                    if self.J[k, i] > 0:
+                        for y in range(0, self.LRules):
+                            sum1 = sum1 + special.eval_hermitenorm(int(self.J[k, i]), self.rulesX[y]) * self.rulesX[y] * self.rulesW[y]
+                    sum2 = sum2 + sum1 * self.u0(self.x[z]) * sqrt(2.0) / (sqrt(2.0 * self.nu) * pi * (k + 1))
+                ci[i, z] = sum2
+        return ci
+
 
     def Cnm(self):
         """
@@ -253,6 +243,7 @@ class integrator:
         """
         Cnm = np.zeros([self.M, self.M])
         I4 = self.integr4()
+
         for k in range(1, self.M):
             for i in range(1, self.M):
                 I2 = self.integr2(self.J[:, k], self.J[:, i], k, i)
@@ -308,7 +299,6 @@ class integrator:
 
         return Eig1[0].real, Eig1[0].imag, Eig1[1].real, Eig1[1].imag, self.u02()
 
-    @jit
     def SimulaX(self):
         """
         Function to simulate X.
@@ -328,31 +318,26 @@ class integrator:
             Array containing hermite polynomials evaluated to simulate real space
 
         """
-        @jit
+
         def evalXSin(x, k):
 
             return sqrt(2.0 * self.nu) * k * pi * sqrt(2.0 / pi) * (self.u0(x)) * (sin(k * pi * x))
+        
+        Px = len(self.x)
+        H = np.zeros([self.M, Px])
+        for k in range(0, Px):
+            for j in range(1, self.M):
+                prod = 1.0
+                for i in range(0, self.M):
+                    if self.J[i, j] > 0:
+                        x1 = integrate.quad(evalXSin, 0, 1, args=k)[0]
+                        prod = prod * special.eval_hermitenorm(int(self.J[i, j]),
+                                                               x1) * (1.0 / sqrt(factorial(self.J[i, j])))
+                H[j, k] = prod
+            x2 = self.x[k]
+            H[0, k] = special.eval_hermitenorm(2, x2) - special.eval_hermitenorm(1, x2) + 1
+        return H
 
-        def make(f):
-            @jit
-            def integ(xSpace, M, J):
-                Px = len(xSpace)
-                H = np.zeros([M, Px])
-                for k in range(0, Px):
-                    for j in range(1, M):
-                        prod = 1.0
-                        for i in range(0, M):
-                            if J[i, j] > 0:
-                                x1 = integrate.quad(f, 0, 1, args=[k])[0]
-                                prod = prod * special.eval_hermitenorm(int(J[i, j]),
-                                                                       x1) * (1.0 / sqrt(factorial(J[i, j])))
-                        H[j, k] = prod
-                    x2 = xSpace[k]
-                    H[0, k] = special.eval_hermitenorm(2, x2) - special.eval_hermitenorm(1, x2) + 1
-                return H
-            return integ
-
-        return make(evalXSin)(self.x, self.M, self.J)
 
 
 class set_simulation(integrator):
@@ -360,7 +345,7 @@ class set_simulation(integrator):
     def __init__(self, u0, params, JNM):
         super(set_simulation, self).__init__(u0, JNM, **params)
 
-    @jit
+
     def SimulaT(self, z, cons):
         """
         Function to simulate Time
@@ -409,7 +394,7 @@ class set_simulation(integrator):
 
         return np.dot(T, self.H1)[:, z]
 
-    @jit
+
     def SimulaTX(self):
         """
         Function to simulate Time-X.
@@ -425,7 +410,7 @@ class set_simulation(integrator):
 
         """
         TX = np.zeros([len(self.t), len(self.x)])
-        for zi in self.x:
+        for zi in range(len(self.x)):
             TX[:, zi] = abs(self.SimulaT(zi, np.dot(np.linalg.inv(self.EigVecRe), self.U_1[:, zi])))
 
         return TX

@@ -6,8 +6,8 @@ Solvers define how a pde is solved, i.e., advanced in time.
 
 from typing import List
 
-from .setup_solver import FPK_solver
+from . import setup_solver
 
 __all__ = [
-    "FPK_solver"
+    "setup_solver"
 ]

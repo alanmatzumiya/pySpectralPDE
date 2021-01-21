@@ -5,14 +5,19 @@ from scipy.linalg import toeplitz
 class differentation:
 
     def __init__(self, N):
-        self.N = N
+        self.ik = self.waves_coeff(N)
+        self.diff1 = self.D1(N)
+        self.diff2 = self.D2(N)
 
-    def waves_coeff(self):
-        k = np.zeros(len(self.N), dtype=complex)
-        k[:] = np.fft.fftfreq(self.N) * self.N
-        return 1j * k, 1j * k ** 2
+    @staticmethod
+    def waves_coeff(N):
+        k = np.zeros(N, dtype=complex)
+        k[:] = np.fft.fftfreq(N) * N
 
-    def chebfft(self, v):
+        return 1j * k
+
+    @staticmethod
+    def chebfft(v):
         '''Chebyshev differentiation via fft.
            Ref.: Trefethen's 'Spectral Methods in MATLAB' book.
         '''
@@ -38,25 +43,28 @@ class differentation:
                0.5 * (-1) ** (N + 1) * N * U[N]
         return w
 
-    def D1(self):
-        h = 2.0 * np.pi / self.N
-        col = np.zeros(self.N, dtype=np.float)
-        col[1:] = 0.5 * (-1.0) ** np.arange(1, self.N) / np.tan(np.arange(1, self.N) * h / 2.0)
-        row = np.zeros(self.N)
+    @staticmethod
+    def D1(N):
+        h = 2.0 * np.pi / N
+        col = np.zeros(N, dtype=np.float)
+        col[1:] = 0.5 * (-1.0) ** np.arange(1, N) / np.tan(np.arange(1, N) * h / 2.0)
+        row = np.zeros(N)
         row[0] = col[0]
-        row[1:] = col[self.N - 1:0:-1]
+        row[1:] = col[N - 1:0:-1]
         D1 = toeplitz(col, row)
         return D1
 
-    def D2(self):
-        h = 2.0 * np.pi / self.N
-        col = np.zeros(self.N, dtype=np.float)
+    @staticmethod
+    def D2(N):
+        h = 2.0 * np.pi / N
+        col = np.zeros(N, dtype=np.float)
         col[0] = -np.pi ** 2 / (3.0 * h ** 2) - 1.0 / 6.0
-        col[1:] = -0.5 * (-1.0) ** np.arange(1, self.N) / np.sin(0.5 * h * np.arange(1, self.N)) ** 2
+        col[1:] = -0.5 * (-1.0) ** np.arange(1, N) / np.sin(0.5 * h * np.arange(1, N)) ** 2
         D2 = toeplitz(col)
         return D2
 
-    def fourdif(self, nfou, mder):
+    @staticmethod
+    def fourdif(nfou, mder):
         """
         Fourier spectral differentiation.
 

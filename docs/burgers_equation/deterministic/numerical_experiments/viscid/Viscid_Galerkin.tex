@@ -80,11 +80,7 @@
 		\label{Galerkin_Euler}
 			\hat{u}^{j+1}_n &= \left[ \frac{ e^{- \lambda_n \Delta t}}{ 1 + \Delta t \frac{in}{2} P \hat{u}_0 (0) } \right]^{j+1} \hat{u}^0_n - \Delta t \frac{in}{2} P \sum_{k=1}^{j+1} \left[ \frac{ e^{- \lambda_n \Delta t}}{ 1 + \Delta t \frac{in}{2} P \hat{u}_0 (0) } \right]^{k}  \sum_{\substack{|q|\leq N \\ q \neq 0, n}} \hat{u}^{j+1-k}_{n - q} \hat{u}^{j+1-k}_q
 		\end{align}
-		
-		\begin{align*}
-			\hat{u}^{j+1}_N = \mathcal{L}_N^{j+1} \hat{u}^{0}_N - \Delta t \frac{in}{2} P \sum_{k=1}^{j+1} \mathcal{L}_N^{k} B_N (\hat{u}_N^{j+1-k}) 
-		\end{align*}
-		Now, we will proceed to describe the steps necessary to implement the method based on the above. The simulations we are going to show were based on the formulation (\ref{Galerkin_Euler}), taking advantage of the fast Fourier transformation to calculate the coefficients $\hat{u}_n$, since it allows us to go from physical space to the space of Fourier and conversely. Also, it is worth mentioning that the codes used in this work can be found at \url{https://github.com/alanmatzumiya/Maestria.git}. \\ 
+		Now, we will proceed to describe the steps necessary to implement the method based on the above. The simulations we are going to show were based on the formulation (\ref{Galerkin_Euler}), taking advantage of the fast Fourier transformation to calculate the coefficients $\hat{u}_n$, since it allows us to go from physical space to the space of Fourier and conversely. Also, it is worth mentioning that the codes used in this work can be found at \url{https://github.com/alanmatzumiya/pySpectralPDE.git}. \\ 
 		
 		To carry out these numerical experiments it was necessary to follow the following steps:
 		\begin{enumerate}
@@ -118,10 +114,8 @@
 		\begin{align}
 			\label{IC}
 			u_0 (x) = e^{0.05 x^2}, \hspace{3mm} x \in [x_L, x_R] 
-		\end{align}
+		\end{align}	
 		
-		
-		\newpage
 		To compare results, we will use the approximation given by (\ref{Exact_Solution_Approximation}) as the exact solution. In the figure \ref{Galerkin_alphas} shows the maximum distance over every $t \in [0, 100]$ between the exact solution and its approximations given by (\ref{Galerkin_Euler}) for $N = 2^m$, $m = 4, \dots, 12$, $\Delta t = 1.0 \times 10^{-5}$, and different values of $\alpha$. Furthermore, in Tables \ref{Galerkin_tabla_L2_alpha=1} and \ref{Galerkin_tabla_max_alpha=1}, we can see the numerical values ​​of these distances for different configurations of $N$ and $\Delta t$. Similarly, in Tables \ref{Galerkin_tabla_L2_alpha=005} and \ref{Galerkin_tabla_max_alpha=005} but for $\alpha = 0.005$.
 	
 	\begin{figure}[H]
@@ -143,7 +137,7 @@
 	\begin{table}[H]
 		\begin{tabular}{lcccc}
 			\toprule
-			\multicolumn{1}{c}{\textbf{Approximation}} & \multicolumn{4}{c}{\textbf{Error}} \\
+			\multicolumn{1}{c}{\textbf{Expansion}} & \multicolumn{4}{c}{\textbf{Error}} \\
 			$\hspace{9mm}N$ & $\Delta t=1\times 10^{-2}$ & $\Delta t=1\times 10^{-3}$ & $\Delta t=1\times 10^{-4}$ & $\Delta t=1\times 10^{-5}$ \\
 			\midrule
 			\hspace{7mm} 16 & 0.72504    & 0.72504    & 0.72504    & 0.72504    \\
@@ -161,7 +155,6 @@
 			\hspace{7mm} 1024 & $\ast$ & 9.41793 $\times 10^{-5}$ & 9.41109 $\times 10^{-6}$ & 9.36411 $\times 10^{-7}$              \\
 			\midrule
 			\hspace{7mm} 2048 & $\ast$ & $\ast$ & 9.41109 $\times 10^{-6}$ & 9.36411 $\times 10^{-7}$   \\
-			\\
 			\bottomrule
 		\end{tabular}
 		\caption{Error using $L^2$-norm with $\alpha = 1.0$}
@@ -169,7 +162,7 @@
 		\vspace{1cm}
 		\begin{tabular}{lcccc}
 			\toprule
-			\multicolumn{1}{c}{\textbf{Approximation Max}} & \multicolumn{4}{c}{\textbf{Error}} \\
+			\multicolumn{1}{c}{\textbf{Expansion}} & \multicolumn{4}{c}{\textbf{Error}} \\
 			$\hspace{9mm}N$ & $\Delta t=1\times 10^{-2}$ & $\Delta t=1\times 10^{-3}$ & $\Delta t=1\times 10^{-4}$ & $\Delta t=1\times 10^{-5}$ \\
 			\midrule
 			\hspace{7mm} 16 & 0.203363    & 0.203333    & 0.203331    & 0.20333     \\
@@ -187,7 +180,6 @@
 			\hspace{7mm} 1024 & * & 4.7368 $\times 10 ^{-5}$  & 4.72569 $\times 10 ^{-6}$ & 4.64922 $\times 10 ^{-7}$ \\
 			\midrule
 			\hspace{7mm} 2048 & * & * & 4.72569 $\times 10 ^{-6}$ & 4.64922 $\times 10 ^{-7}$ \\
-			\\
 			\bottomrule
 		\end{tabular}
 		\caption{Error using Max norm with $\alpha = 1.0$}
@@ -206,7 +198,7 @@
 	\begin{table}[H]
 	\begin{tabular}{lcccc}
 		\toprule
-		\multicolumn{1}{c}{\textbf{Approximation}} & \multicolumn{4}{c}{\textbf{Error}} \\
+		\multicolumn{1}{c}{\textbf{Expansion}} & \multicolumn{4}{c}{\textbf{Error}} \\
 		$\hspace{9mm}N$ & $\Delta t=1\times 10^{-2}$ & $\Delta t=1\times 10^{-3}$ & $\Delta t=1\times 10^{-4}$ & $\Delta t=1\times 10^{-5}$ \\
 		\midrule
 		\hspace{7mm} 16 & 9.95328   & 9.91901    & 9.91597    & 9.91567    \\
@@ -224,9 +216,6 @@
 		\hspace{7mm} 1024 & 0.161405  & 0.133743   & 0.131882   & 0.131699   \\
 		\midrule
 		\hspace{7mm} 2048 & 6.50292 $\times 10^{-2}$ & 4.70602 $\times 10^{-2}$ & 4.57371 $\times 10^{-2}$  & 4.56090 $\times 10^{-2}$  \\
-		\midrule
-		\hspace{7mm} 4096 & * & 7.26917 $\times 10^{-3}$ & 6.64157 $\times 10^{-3}$ & 6.60753 $\times 10^{-3}$ \\
-		\\
 		\bottomrule
 	\end{tabular}
 	\caption{Error using $L^2$-norm with $\alpha = 0.005$}
@@ -234,7 +223,7 @@
 	\vspace{1cm}
 	\begin{tabular}{lcccc}
 		\toprule
-		\multicolumn{1}{c}{\textbf{Approximation Max}} & \multicolumn{4}{c}{\textbf{Error}} \\
+		\multicolumn{1}{c}{\textbf{Expansion}} & \multicolumn{4}{c}{\textbf{Error}} \\
 		$\hspace{9mm}N$ & $\Delta t=1\times 10^{-2}$ & $\Delta t=1\times 10^{-3}$ & $\Delta t=1\times 10^{-4}$ & $\Delta t=1\times 10^{-5}$ \\
 		\midrule
 		\hspace{7mm} 16 & 2.50002  & 2.48992   & 2.48891   & 2.48881   \\
@@ -252,9 +241,6 @@
 		\hspace{7mm} 1024 & 0.241841 & 0.244188  & 0.244437  & 0.244461  \\
 		\midrule
 		\hspace{7mm} 2048 & 0.133067 & 0.104675  & 0.109151  & 0.109596  \\
-		\midrule
-		\hspace{7mm} 4096 & * & 2.37273  $\times 10 ^{-2}$ & 1.75687  $\times 10 ^{-2}$ & 1.69531  $\times 10 ^{-2}$\\
-		\\
 		\bottomrule
 	\end{tabular}
 	\caption{Error using Max norm with $\alpha =0.005$}

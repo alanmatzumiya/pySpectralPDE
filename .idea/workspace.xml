@@ -20,354 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="928cb0ea-c99f-428a-8dda-6ab820cbe546" name="Default Changelist" comment="update methods">
-      <change afterPath="$PROJECT_DIR$/docs/presentation/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/0-Contenido.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/1-Motivacion_Objetivos.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/2-1-Burgers_Determinista_Galerkin.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/2-2-Burgers_Determinista_Colocacion.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/3-0-Fokker_Planck_Kolmogorov.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/3-1-Burgers_Estocastica_Solucion.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/Glosario.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/FPK/IC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/FPK/Numerical_Solution_Stochastic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/FPK/norms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/exact/Exact_Solution_alpha=001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/examples/example21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/examples/example22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/examples/example23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/examples/example24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/inviscid/Numerical_Solution_Inviscid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/inviscid/Numerical_Solution_Inviscid_T.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/inviscid/small_alpha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/inviscid/small_alpha_T.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/inviscid/varios_alphas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/collocation/Numerical_Solution_alpha=0005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/collocation/Numerical_Solution_alpha=0005_T=100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/collocation/Numerical_Solution_alpha=1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/collocation/Numerical_Solution_alpha=1_T=100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/collocation/alphas_Error_N.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/galerkin/Numerical_Solution_alpha=0005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/galerkin/Numerical_Solution_alpha=0005_T=100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/galerkin/Numerical_Solution_alpha=1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/galerkin/Numerical_Solution_alpha=1_T=100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/figures/viscid/galerkin/alphas_Error_N.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/files/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.nav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.snm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/presentation/presentation.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Thesis.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Thesis.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Applied Mathematical Sciences 148) Roger Peyret (auth.) - Spectral Methods for Incompressible Viscous Flow-Springer-Verlag New York (2002).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Applied Mathematical Sciences 44) A. Pazy (auth.) - Semigroups of Linear Operators and Applications to Partial Differential Equations-Springer-Verlag New York (1983).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Classics in Applied Mathematics) Randall Leveque-Finite Difference Methods for Ordinary and Partial Differential Equations_ Steady-State and Time-Dependent Problems (Classics in Applied Mathematics)-.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Grundlehren der mathematischen Wissenschaften 303) Ronald A. Devore, George G. Lorentz - Constructive approximation-Springer-Verlag (1993).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Lecture Notes in Mathematics 1297) Kang Feng, Meng-zhao Qin (auth.), You-Ian Zhu, Ben-yu Guo (eds.) - Numerical Methods for Partial Differential Equations_ Proceedings of a Conference held in Shangha.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Scientific Computation) Claudio G Canuto, M. Yousuff Hussaini, Alfio Quarteroni, Thomas A. Zang - Spectral methods_ evolution to complex geometries and applications to fluid dynamics-Springer (2007).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Scientific Computation) O. P. Le Maître, Omar M. Knio (auth.) - Spectral Methods for Uncertainty Quantification_ With Applications to Computational Fluid Dynamics-Springer Netherlands (2010).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Springer Series in Computational Physics) Professor Claudio Canuto, Dr. M. Yousuff Hussaini, Professor Alfio Quarteroni, Dr. Thomas A. Zang Jr. (auth.) - Spectral Methods in Fluid Dynamics-Springer-V.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/(Springer Series in Computational Physics) Professor Claudio Canuto, Dr. M. Yousuff Hussaini, Professor Alfio Quarteroni, Dr. Thomas A. Zang Jr. (auth.)-Spectral Methods in Fluid Dynamics-Springer-Ver.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/00112.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/0507288.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/0704.1611(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/0704.1611.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/0806.4491.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/08internetseminar200405.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/0909.2422.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-002203968890040X-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0022039613001642-main(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0022039613001642-main(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0022039613001642-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0022039614000783-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0022247X03002543-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0022247X10004051-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0304414913000653-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S0304414913003050-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1-s2.0-S1631073X18302553-main.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/10.1.1.329.7549.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/10.2307@2156783.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/10.2307@2157798.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/10.2307@2158255.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1104.4717.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/12.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1201.5648.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1308.5314(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1308.5314.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1406.3995(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1406.3995.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1502.07174.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1601.01503(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1601.01503.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1605.01109.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1709.06966.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1801.00573.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/195_numer_tomas(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/195_numer_tomas.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1979Heriot-Watt.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1979_TowardsTheUltimateConservativeDifferenceScheme5.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/19840010891.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/19880016773(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/19880016773.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1_ecudepa(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1_ecudepa.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/1_notas-05_065-complete.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/2012-parallel-spectral-numerical-methods.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/20150001229.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/25858891.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/285.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/340-172-1-PB.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/364.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/3D_coupled_Burgers_eqns(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/3D_coupled_Burgers_eqns.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/3DcoupledBurgerseqns.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/414808.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/468392.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/473876.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/48126dd989e5cb6b8d3034605f03bc15ea05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/4_notas-05_065-complete.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/5172.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/581987.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/5e7043a2a73453360be5290bbeafc93dd2ea.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/65574f18cce9ab2fff7c739774a93154c15c.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/67_1213_burgers_equation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/740cb629c9b648a02e0e7856cf63154d80fe.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/802356.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/82154308.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/85330ad496d443efc9793637aacedd3d8783(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/85330ad496d443efc9793637aacedd3d8783(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/85330ad496d443efc9793637aacedd3d8783.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/A Partial Nonlinear Extension of Lax-Richtmyer Approximation Theo.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Adam Bobrowski - Functional Analysis for Probability and Stochastic Processes_ An Introduction (2005, Cambridge University Press).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/AdvancedComputationalFluidDynamics_20160502.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Amnon Pazy - Semigroups of Linear Operators and Applications to Partial Differential Equations (Applied Mathematical Sciences) (1992).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/B. Noble - Methods Based on the Wiener-Hopf Technique for the Solution of Partial Differential Equations-Pergamon Press (1958).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/BSMF_1965__93__43_0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Bardos-Tadmor.NumerMath2015.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Basdevant-espectral-burgers.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Beck2012_burgers.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Ben-Yu Guo, Pen-Yu Kuo - Spectral methods and their applications-World Scientific (1998).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Boyd_2000.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Bressan_Quarteroni_Calcolo(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Bressan_Quarteroni_Calcolo.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Burden R.L., Faires J.D.-Numerical analysis (1993).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Burgers(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Burgers.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Burgers_Equation_M_Landajuela.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Burgers_equation_viscous.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/CAPITULO_V_SUCESIONES_Y_SERIES_I.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/CFD_Python_the_12_steps_to_Navier-Stokes_equations.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/CH_HLI.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/ColeHopf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Continuity_IC_Kolmogorov-DDM(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Continuity_IC_Kolmogorov-DDM(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Continuity_IC_Kolmogorov-DDM.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Continuity_IC_Kolmogorov.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/DG-general-approach.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/DLeon-TorrVERSIONFINAL.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Da Prato G., Zabczyk J. - Stochastic equations in infinite dimensions (1992, CUP).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Drift_Estimation_for_Discretely_Sampled_SPDEs.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/ESAIM_2009_29.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Exhibit3.11.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/G. B. Whitham(auth.) - Linear and Nonlinear Waves (1999).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Gottlieb12b(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Gottlieb12b(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Gottlieb12b.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/GriffithsSchiesser_2009_Linearandnonlinearwaves.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Guo-Ma-Tad_SINUM01_36268(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Guo-Ma-Tad_SINUM01_36268.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/H. Bateman - Partial differential equations of mathematical physics (1932, Cambridge University Press).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Hopf-Cole-Brown.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/IDAQP-Delgado-Flandoli-2016.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Interactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/IntroSPDE(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/IntroSPDE.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/J. M. Burgers (auth.), F. T. M. Nieuwstadt, J. A. Steketee (eds.) - Selected Papers of J. M. Burgers (1995, Springer Netherlands).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/JCLMpartetres(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/JCLMpartetres(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/JCLMpartetres.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/John Strikwerda - Finite difference schemes and partial differential equations (2004, Society for Industrial and Applied Mathematics).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/JstatphysrandomBurgersflow.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/KMJ-52-3-327.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Kheswa_Khayelihle_Allen_2015.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/KruzhkovLectures_DeGruyter2009_.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Lagrange J.L. - Oeuvres. Tome 3-Gauthier~Villars (1869).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Laguerre-Galerkin_method_for_nonlinear_partial_dif.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/LeVequeRJ.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Leveque - Finite Volume Methods for Hyperbolic Equations(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Leveque - Finite Volume Methods for Hyperbolic Equations.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Li-Zhang-2017.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Louis Nirenberg - Topics in nonlinear functional analysis-Unknown (2001).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/MWR-AReview.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Ma_hyper_SV_SINUM1998.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Maday-Tadmor.SINUM-89.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Mild_Solutions_of_Fractional_Semilinear_Integro-Di.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/NLGalerkin.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Nessyahu-Tadmor.SINUM-92.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Num.Pde.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Numerical-Solution-of-Burgers-equation-via-Cole-Hopf-transformed-diffusion-equation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Numerical_Solutions_of_Three-Dimensional_Coupled_B.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/OlmosaMatzumiya5feb2019.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Python_for_scientists.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/QEPPaper (1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Richard von Mises, Kurt O. Friedrichs - Fluid Dynamics  (Applied Mathematical Sciences) (1971).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Robert D. Richtmyer, K. W. Morton - Difference Methods for Initial-Value Problems-Interscience Publishers (1967)(1).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Robert D. Richtmyer, K. W. Morton - Difference Methods for Initial-Value Problems-Interscience Publishers (1967)(2).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Robert D. Richtmyer, K. W. Morton - Difference Methods for Initial-Value Problems-Interscience Publishers (1967).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/S0025-5718-1993-1185240-3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/S0025-5718-1994-1201068-0(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/S0025-5718-1994-1201068-0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Society for Industrial and Applied Mathematics - Journal SIAM series B on Numerical Analysis (1964-1965).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Spectral Methods in MATLAB - Lloyd N. Trefethen.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Spectral2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/SpectralMethodsfortimePDESICASEREPORT1983.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Spectral_methods_for_CFD.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Spectral_methods_for_discontinuous_probl.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Stability and Convergence for Nonlinear Partial Differential Equa.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Stoch-Verif27fev2014FR.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/SurveyBurgers.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Tad-SV_shock_capturing_CMAME90.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Tad_hyper_SV_NMFD_1993.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Tadmor-hyper-viscosity_CMS04(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Tadmor-hyper-viscosity_CMS04.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Tadmor.ICNMFD93.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Tadmor.SINUM-89.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/The_continuous_Galerkin_method_for_an_integro-diff.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Thesis.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Thesis_Mar142019.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Thesis_matzumiya_feb22_2019.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Time_asymptotics_for_solutions_of_the_Burgers_equa.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Vigirdas Mackevicius(auth.) - Introduction to Stochastic Analysis (2011, Wiley-ISTE).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Whitham-LinearAndNonlinearWaves_text.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Xin‐She Yang(eds.) - Mathematical Modeling with Multidisciplinary Applications-Wiley (2013).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/Zada33.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Advances in Applied Mechanics 43] Hassan Aref and Erik van der Giessen (Eds.) - Advances in Applied Mechanics (2009, Academic Press).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Advances in applied mathematics] Chow, Pao Liu - Stochastic Partial Differential Equations (2014, CRC Press).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Applied mathematical sciences (Springer-Verlag New York Inc.) 196] Karniadakis, George_ Zhang, Zhongqiang - Numerical methods for stochastic partial differential equations with white noise (2017, Springer).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[CBMS-NSF Regional Conference Series in Applied Mathematics] David Gottlieb, Steven A. Orszag - Numerical analysis of spectral methods (1987, Society for Industrial  Mathematics).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[CBMS-NSF Regional Conference Series in Applied Mathematics] Peter D. Lax - Hyperbolic Systems of Conservation Laws and the Mathematical Theory of Shock Waves (1987, Society for Industrial  Mathematics).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[CBMS-NSF Regional Conference Series in Applied Mathematics] Peter D. Lax - Hyperbolic Systems of Conservation Laws and the Mathematical Theory of Shock Waves (1987, Society for Industrial  Mathematics).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Cambridge monographs on applied and computational mathematics 21] Jan S. Hesthaven, Professor Sigal Gottlieb, David Gottlieb - Spectral methods for time-dependent problems (2007, Cambridge University Press).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[JFM1972] Tatsumi,Kida  - Burgers turbulence .pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics 1700] Wojbor A. Woyczyński (auth.) - Burgers-KPZ Turbulence_ Göttingen Lectures (1998, Springer-Verlag Berlin Heidelberg).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics 1715] N.V. Krylov, M. Röckner, J. Zabczyk, G. Da Prato - Stochastic PDEs and Kolmogorov equations in infinite dimensions_ Lectures (1999, Springer).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics 1942] Sergio Albeverio, Franco Flandoli, Yakov G. Sinai (auth.), Giuseppe Da Prato, Michael Rückner (eds.) - SPDE in Hydrodynamic_ Recent Progress and Prospects_ Lectures given at the C.I.M.E. S.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics 2082 C.I.M.E. Foundation Subseries] Wolf-Jürgen Beyn, Luca Dieci, Nicola Guglielmi, Ernst Hairer, Jesús María Sanz-Serna, Marino Zennaro (auth.) - Current Challenges in Stability Issues for Nu-1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics 2082 C.I.M.E. Foundation Subseries] Wolf-Jürgen Beyn, Luca Dieci, Nicola Guglielmi, Ernst Hairer, Jesús María Sanz-Serna, Marino Zennaro (auth.) - Current Challenges in Stability Issues for Nu.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics] Giuseppe Da Prato, Luciano Tubaro - Stochastic Partial Differential Equations and Applications (1987, Springer).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Mathematics] Giuseppe Da Prato, Luciano Tubaro - Stochastic Partial Differential Equations and Applications II (1989, Springer).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture Notes in Pure and Applied Mathematics] Giuseppe Da Prato, Luciano Tubaro - Stochastic Partial Differential Equations and Applications - VII  (2005, Marcel Dekker Inc).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Lecture notes in mathematics 1697] B. Cockburn, C. Johnson, C.-W. Shu, E. Tadmor, Alfio Quarteroni - Advanced numerical approximation of nonlinear hyperbolic equations_ lectures given at the 2nd session of the Centro Intern.djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[London Mathematical Society Lecture Note Series] G. Da Prato, J. Zabczyk - Ergodicity for infinite dimensional systems (1996, CUP).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Mathematics and Its Applications 422] Alexander Pankov - G-Convergence and Homogenization of Nonlinear Partial Differential Operators (1997, Springer).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Progress in Nonlinear Differential Equations and Their Applications] Gianni Dal Maso - An introduction to G-convergence (1993, Birkhäuser Boston).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Publications of the Scuola Normale Superiore 13] Giuseppe Da Prato (auth.) - Introduction to Stochastic Analysis and Malliavin Calculus (2014, Edizioni della Normale).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Regional conference series in mathematics 74] Lawrence C. Evans - Weak convergence methods for nonlinear partial differential equations (1990, Published for the Conference Board of the Mathematical Sciences by the American .djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Scientific Computation] Claudio G Canuto, M. Yousuff Hussaini, Alfio Quarteroni, Thomas A. Zang - Spectral methods_ fundamentals in single doma.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Scientific Computation] Prof. Dr. David A. Kopriva (auth.) - Implementing Spectral Methods for Partial Differential Equations_ Algorithms for Scientists and Engineers (2009, Springer Netherlands).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Series in Contemporary Applied Mathematics] Gui-Qiang Chen, Gui-Qiang Chen, Ta-Tsien Li, Chun Liu - Nonlinear Conservation Laws, Fluid Systems and Related Topics (Series in Contemporary Applied Mathematics) (2009, World Scie.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[Springer Series in Computational Mathematics 23] Alfio Quarteroni, Alberto Valli (auth.) - Numerical approximation of partial differential equations (1994, Springer-Verlag Berlin Heidelberg).djvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[The IMA Volumes in Mathematics and its Applications 153] Alberto Bressan (auth.), Alberto Bressan, Gui-Qiang G. Chen, Marta Lewicka, Dehua Wang (eds.) - Nonlinear Conservation Laws and Applications (2011, Springer US).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/[The IMA Volumes in Mathematics and its Applications 77] T. Funaki, K. Uchiyama, H. T. Yau (auth.), Tadahisa Funaki, Wojbor A. Woyczynski (eds.) - Nonlinear Stochastic PDEs_ Hydrodynamic Limit and Burgers’ Turbulence (1996,.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/_CAMBR~1.PDF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/aee-complete-2014.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/alanmatzu.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/bassanini1997(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/bassanini1997.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/bec-burgers-01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/book-31465.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/book2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/burgers(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/burgers.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/burgers1948.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/burgers2(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/burgers2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/c6f43c769572c4cfc94ffc9c5710484ff1e5.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/canuto1981(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/canuto1981.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/canuto1982.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/capitulo-11.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/chap3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/chapter6.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/daprato1994.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/document(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/document.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/download.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/drcaldwellcv2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/epperson1991.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/euclid.cmp.1104271129.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/gottlieb2012.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/he1996.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/holden2002(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/holden2002.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/hopf1950.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/ijdev6n1-2_05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/imm6525.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/integrationslides.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/jessica_santana_bejarano.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/kato1961.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/lasiecka1984(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/lasiecka1984.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/lin_stab_minicourse_2012.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/maday1981.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/mwr.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/notas-05_065-complete.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/numcl_notes.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/numer_cesar.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/on-the-numerical-solution-of-one-dimensional-nonlinear-nonhomogeneous-burgers-equation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/one-dimensionalBurgers0001.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/palma.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/paper10.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/partial-differential-equations.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/pazy1983.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/presentation2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/qam2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/recent.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/script1011.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/stochastic hydrodynamics.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/stochastic/1502.07174.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/stochastic/recent.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/temam1991(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/temam1991.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/the_local_discontinuous_galerkin_method_with_generalized_alternating_flux_for_solving_burgers_equation-1545293417.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/thesis.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/thesis_jairo.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/tifr08(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/tifr08(2).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/tifr08.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/vol12-1h.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/wu1997(1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/books/wu1997.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.aux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.nav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.snm" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentation/presentation.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.synctex.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/Presentation.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/chapters/Burgers_Determinista.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/chapters/Burgers_Estocastica.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/chapters/Conclusiones.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentation/files/chapters/4-Conclusiones.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/chapters/Introduccion.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/chapters/Metodos_Espectrales.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru.sty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_background.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_background.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_background_dark.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_background_dark.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_background_light.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_background_light.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_logo.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/ru_logo.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/presentation/texput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Thesis.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bibliograph/bibliography.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bibliograph/bibliography.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/introduction/Introduction.aux" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction/Introduction.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/introduction/Introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/docs/introduction/Introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/deterministic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/deterministic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/deterministic/grapher.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/deterministic/grapher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/deterministic/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/deterministic/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/deterministic/setup_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/deterministic/setup_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/deterministic/solvers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/deterministic/solvers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/deterministic/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/deterministic/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/stochastic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/stochastic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/stochastic/setup_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/pySpectralPDE/stochastic/setup_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pySpectralPDE/stochastic/version.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,6 +59,9 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JupyterTrust" id="b197a2d6-7956-4f7a-b47d-b6c107ba7c12" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1gw15WGK4kV5809yIsq7lTmQRoL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -397,12 +73,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PySpectral" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.example">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -417,6 +100,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -493,6 +195,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.solvers" />
         <item itemvalue="Python.setup_solver" />
@@ -543,44 +246,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update methods" />
     <option name="LAST_COMMIT_MESSAGE" value="update methods" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="431" y="257" width="800" height="719" key="#Plugins" timestamp="1599211675094">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state x="431" y="257" width="800" height="719" key="#Plugins/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599211675094" />
-    <state x="619" y="371" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599880450617">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state x="619" y="371" width="424" height="491" key="FileChooserDialogImpl/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599880450617" />
-    <state width="1482" height="315" key="GridCell.Tab.0.bottom" timestamp="1599257334285">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state width="1482" height="315" key="GridCell.Tab.0.bottom/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599257334285" />
-    <state width="1482" height="315" key="GridCell.Tab.0.center" timestamp="1599257334285">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state width="1482" height="315" key="GridCell.Tab.0.center/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599257334285" />
-    <state width="1482" height="315" key="GridCell.Tab.0.left" timestamp="1599257334285">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state width="1482" height="315" key="GridCell.Tab.0.left/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599257334285" />
-    <state width="1482" height="315" key="GridCell.Tab.0.right" timestamp="1599257334285">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state width="1482" height="315" key="GridCell.Tab.0.right/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599257334285" />
-    <state x="325" y="248" width="1022" height="737" key="SettingsEditor" timestamp="1599211770132">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state x="325" y="248" width="1022" height="737" key="SettingsEditor/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599211770132" />
-    <state x="431" y="349" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599520787045">
-      <screen x="72" y="27" width="1528" height="1173" />
-    </state>
-    <state x="431" y="349" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1528.1173/1600.0.1680.1050@72.27.1528.1173" timestamp="1599520787045" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/spectral_methods$test.coverage" NAME="test Coverage Results" MODIFIED="1599257334275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PySpectral/burgers/deterministic" />
-    <SUITE FILE_PATH="coverage/spectral_methods$setup_solver.coverage" NAME="setup_solver Coverage Results" MODIFIED="1599214256894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PySpectral/burgers/deterministic" />
-    <SUITE FILE_PATH="coverage/spectral_methods$solvers.coverage" NAME="solvers Coverage Results" MODIFIED="1599219341202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PySpectral/burgers/deterministic" />
   </component>
 </project>

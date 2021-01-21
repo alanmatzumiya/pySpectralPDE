@@ -1,6 +1,6 @@
 from pathlib import Path
 from setuptools import setup, find_packages
-from PySpectral import version
+from pySpectralPDE import version
 
 __version__ = version.__version__
 
@@ -10,7 +10,7 @@ BASE_PATH = Path(__file__).resolve().parent
 with open(BASE_PATH / "pySpectralPDE" / "version.py", "r") as f:
     exec(f.read())
 
-DOWNLOAD_URL = f"https://github.com/alanmatzumiya/spectral-methods/archive/v{__version__}.tar.gz"
+DOWNLOAD_URL = f"https://github.com/alanmatzumiya/pySpectralPDE/archive/v{__version__}.tar.gz"
 
 # read the version from the particular file
 with open(BASE_PATH / "README.md", "r") as fh:
@@ -28,7 +28,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Alan Matzumiya",
     author_email="alan.matzumiya@gmail.com",
-    url="https://github.com/alanmatzumiya/spectral-methods",
+    url="https://github.com/alanmatzumiya/pySpectralPDE",
     download_url=DOWNLOAD_URL,
     keywords=["burgers", "partial-differential-equations", "spectral-methods"],
     python_requires=">=3.7",
